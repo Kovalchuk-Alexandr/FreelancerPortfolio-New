@@ -1,13 +1,13 @@
-echo "# freelancer_portfolio_my" >> README.md
+echo "# FreelancerPortfolio-New" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M master
-git remote add origin https://github.com/Kovalchuk-Alexandr/freelancer_portfolio_my.git
+git remote add origin https://github.com/Kovalchuk-Alexandr/FreelancerPortfolio-New.git
 git push -u origin master
 
-https://kovalchuk-alexandr.github.io/freelancer_portfolio_my/
-freelancer_portfolio_my
+https://kovalchuk-alexandr.github.io/FreelancerPortfolio-New/
+FreelancerPortfolio-New
 
 
 проработав в IT Privatbank 27 лет, наконец могу заняться тем, что нравится и приносит удовольствие. Закончил курсы "Java Developer","NodeJS/Fullstack Developer". И вот я здесь!

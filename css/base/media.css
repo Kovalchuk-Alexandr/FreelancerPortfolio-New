@@ -1,0 +1,172 @@
+
+@media (max-width:796px) {
+  /* Момент перехода переключателя темы из середины вправо */
+  /* Nav */
+
+  .nav-row {
+    justify-content: space-between;
+  }
+
+  .dark-mode-btn {
+    order: 0;
+  }
+  
+}
+
+@media (max-width: 676px) {
+
+  /* Header */
+
+  .header {
+    min-height: unset;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__title strong {
+    font-size: 40px;
+  }
+
+
+  /* General */
+  
+  .section {
+    padding: 40px 0;
+  }
+
+  .title-1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .title-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+
+  /* Projects */
+
+  .project__title {
+    font-size: 21px;
+  }
+
+
+  /* Project page */
+
+  .project-detailes__desc {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+
+   /* Content list */
+  
+  .content-list {
+    row-gap: 20px;
+  }
+  .content-list__item {
+    font-size: 16px;
+  }
+  
+
+  /* Footer */
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footer__wrapper {
+    row-gap: 20px;
+  }
+
+
+  /* Social */
+
+  .social {
+    column-gap: 20px;
+  }
+
+  .social__item {
+    width: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-row  {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav-row  {
+    column-gap:unset;
+  }
+}
+
+@media (max-width: 435px) {
+  .lang {
+    display: flex;
+    column-gap: 10px;
+    margin: 0 15px;
+  }
+}
+
+
+
+@media (max-width: 452px) {
+
+  /* Header */
+
+  /* .header {
+    min-height: unset;
+  } */
+
+  .header__title {
+    font-size: 20px;
+  }
+
+  .header__title strong {
+    font-size: 30px;
+  }
+
+  .header__text {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+
+/* General */
+  
+  .section {
+    padding: 30px 0;
+  }
+
+  .title-1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .title-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+
+  /* Projects */
+
+  .project__title {
+    font-size: 18px;
+  }
+
+  /* Project page */
+
+  .project-detailes__desc p {
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+
+}

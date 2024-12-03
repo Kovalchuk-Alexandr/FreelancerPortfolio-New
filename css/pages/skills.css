@@ -1,0 +1,27 @@
+/* ------------- Skills (content list) ---------------- */
+.content-list {
+  margin: 0 auto;
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 40px;
+}
+
+.content-list a {
+  color: var(--accent);
+}
+
+.content-list__item {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5; 
+}
+
+.content-list__item p + p {
+  margin-top: 0.5em;
+
+}

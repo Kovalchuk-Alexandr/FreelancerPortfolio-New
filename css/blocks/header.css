@@ -1,0 +1,90 @@
+/* ------------- Header ------------- */
+.header {
+  padding: 40px 0 20px;
+  min-height: 695px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  color: var(--header-text);
+  text-align: center;
+
+  background-color: var(--dark-bg);
+  /* background-image: url('../../img/header-bg.png'); */
+  background-image: url('../../img/header/aka-bg.jpg');
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__wrapper {
+  padding: 0 15px;
+  max-width: 860px;
+
+  /* border: 1px solid var(--border-default); */
+  /* border-radius: 12px;
+  backdrop-filter: blur(3px);
+  background: var(--background-muted);
+} */
+
+.header__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  /* margin-bottom: 20px; */
+  /* max-width: 1015px;
+  margin: 0 auto; */
+  /* margin-bottom: 16px; */
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: clamp(4rem, 1.818rem + 10.91vw, 10rem);
+  font-size: 100px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-default);
+  text-transform: capitalize;
+  font-family: "Gambetta", sans-serif;
+  font-style: italic;
+  text-shadow: var(--background-muted-2) 0 0 6px;
+}
+
+.header__title strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.header__title em {
+  font-style: normal;
+  color: var(--purple);
+}
+
+.header__text {
+  display: inline-block;
+
+  font-size: 18px;
+  line-height: 1.333;
+  /* margin-bottom: 40px; */
+
+  /* max-width: 600px;
+  margin: 0 auto; */
+  font-family: var(--second-family);
+  font-weight: 300;
+  font-size: 24px;
+  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-muted);
+
+  text-shadow: var(--text-default) 0 0 1px;
+
+  backdrop-filter: blur(3px);
+  background: var(--background-muted-2);
+}
+
+/* для всех тэгов <p> и соседних (кроме первого) оступ сверху 
+1em (1 * на высоту шрифта [18px]) */
+.header__text p + p {
+  margin-top: 0.5em;
+}

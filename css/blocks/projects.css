@@ -1,0 +1,104 @@
+/* ------------- Projects ---------------- */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 28px;
+  row-gap: 30px;
+  /* max-width: 1170px; */
+}
+
+.project {
+  position: relative;
+  /* max-width: 370px; */
+  aspect-ratio: 450/322;
+  width: 420px;
+  background-color: var(--project-card-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+
+  background-color: var(--background-muted-2);
+  background-image: image-set(
+      url('./../../img/projects/overlay-noise.png') 1x,
+      url('./../../img/projects/overlay-noise@2x.png') 2x
+  );
+  mix-blend-mode: difference;
+  transition: all 0.3s ease-in;
+}
+
+.project__img-wrapper {
+  width: 100%;
+  height: 80%;
+  
+}
+
+.project::after {
+    /* content: ""; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--background-muted-2); */
+    /* background-image: image-set(
+        url('./../../img/projects/overlay-noise.png') 1x,
+        url('./../../img/projects/overlay-noise@2x.png') 2x
+    ); */
+    /* transition: all 0.3s ease-in; */
+}
+
+.project:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in;
+}
+
+.project:hover::after {background-image: unset;}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top center;
+  overflow: hidden;
+}
+
+.project__title {
+  position: absolute;
+  bottom: 10px;
+  padding: 15px 20px 25px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--project-card-text);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  bottom: 4px;
+  z-index: 9;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; */
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: var(--text-default);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 8px 8px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project__icon {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  width: 25px;
+  /* background-size: 20px; */
+}

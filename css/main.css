@@ -1,0 +1,39 @@
+/* 
+Подсказка для использования шрифтов
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+@import './../fonts/chillax/css/chillax.css';
+@import './../fonts/gambetta/css/gambetta.css';
+@import './../fonts/satoshi/stylesheet.css';
+
+/* =============  Fonts ================= */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =============  Base ================= */
+@import './base/reset.css';
+@import './base/vars.css';
+@import './base/base.css';
+@import './base/buttons.css';
+@import './base/mobile-nav-button.css';
+@import './base/mobile-nav.css';
+@import './base/swiper.css';
+
+
+/* =============  Blocks ================= */
+@import './blocks/nav.css';
+@import './blocks/dark-mode-btn.css';
+@import './blocks/link.css';
+@import './blocks/header.css';
+@import './blocks/works.css';
+@import './blocks/projects.css';
+@import './pages/projects-details.css';
+@import './pages/skills.css';
+@import './blocks/footer.css';
+@import './blocks/footer-nav.css';
+
+/* =============  Media ================= */
+@import './base/media.css';

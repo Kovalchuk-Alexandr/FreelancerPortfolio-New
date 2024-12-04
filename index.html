@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer portfolio</title>
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <link rel="icon" sizes="260x260" type="image/x-icon" href="./img/favicon/aka/aka-260.jpg">
@@ -26,11 +27,6 @@
                     <li class="nav-lst__item"><a href="./projects.html" class="nav-list__link nav-list__link" data-lang="projectsMenu">Projects</a></li>
                     <li class="nav-lst__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li>
                 </ul>
-
-                        <!-- <li class="nav-item"><a href="#" class="footer-nav-link" data-lang="home">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="footer-nav-link" data-lang="about">About</a></li>
-                        <li class="nav-item"><a href="#works" class="footer-nav-link" data-lang="selected">Sel.Works</a></li>
-                        <li class="nav-item"><a href="./projects.html" class="footer-nav-link" data-lang="projectsMenu">Projects</a></li> -->
 
                 <div class="nav-btn-set">
                     <div class="lang">
@@ -75,103 +71,50 @@
                         Selected <span>Work</span>
                     </h2>
 
-                    <a href="./projects.html" class="link works__link">See all</a>
+                    <a href="./projects.html" class="link works__link" data-lang="seeall">See all</a>
                 </div>
 
                 <!-- Grid -->
-                <div class="works__grid">
-                    <!-- Work 1 -->
-                    <!-- <article class="work">
-                        <div class="work__img-wrapper">
-                            <img src="./img/works/work-01.jpg" srcset="./img/works/work-01@2x.jpg" alt="Alt" class="work__img">
-                        </div>
-
-                        <div class="work__header">
-                            <h3 class="work__title"><a href="#Space" class="work__title-link">Space</a></h3>
-                            <a href="#Webdesign" class="work__category">Webdesign</a>
-                        </div>
-
-                        <a href="#Space" class="work__link">
-                            <div class="work__link-icon">
-                                <div class="round-icon">
-                                    <img src="./img/ui/ui-arrow.svg" alt="">
+                <!-- <div class="works__grid"> -->
+                    <div class="swiper-slider">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper works__grid">
+                                <!-- Slides -->
+                                <!-- <div class="swiper-slide">
+                                    <div class="swiper-slide-text"> Slide 1</div>
+                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                                 </div>
-                                Work space graphics. Webdesign
-                            </div>
-                        </a>
-                    </article> -->
-
-                    <!-- Work 2 -->
-                    <!-- <article class="work">
-                        <div class="work__img-wrapper">
-                            <img src="./img/works/work-02.jpg" srcset="./img/works/work-02@2x.jpg" alt="Alt" class="work__img">
-                        </div>
-
-                        <div class="work__header">
-                            <h3 class="work__title"><a href="#Nova" class="work__title-link">Nova</a></h3>
-                            <a href="#Webdesign" class="work__category">Webdesign</a>
-                        </div>
-
-                        <a href="#Nova" class="work__link">
-                            <div class="work__link-icon">
-                                <div class="round-icon">
-                                    <img src="./img/ui/ui-arrow.svg" alt="">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-text"> Slide 2</div>
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                                 </div>
-                                Work space graphics. Webdesign
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-text"> Slide 3</div>
+                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div> -->
+                                
                             </div>
-                        </a>
-                    </article> -->
-
-                    <!-- Work 3 -->
-                    <!-- <article class="work">
-                        <div class="work__img-wrapper">
-                            <img src="./img/works/work-03.jpg" srcset="./img/works/work-03@2x.jpg" alt="Alt" class="work__img">
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                    
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                    
+                            <!-- Scrollbar -->
+                            <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
-
-                        <div class="work__header">
-                            <h3 class="work__title"><a href="#Sonic" class="work__title-link">Sonic</a></h3>
-                            <a href="#Webdesign" class="work__category">Webdesign</a>
-                        </div>
-
-                        <a href="#Sonic" class="work__link">
-                            <div class="work__link-icon">
-                                <div class="round-icon">
-                                    <img src="./img/ui/ui-arrow.svg" alt="">
-                                </div>
-                                Work space graphics. Webdesign
-                            </div>
-                        </a>
-                    </article> -->
-
-                    <!-- Work 4 -->
-                    <!-- <article class="work">
-                        <div class="work__img-wrapper">
-                            <img src="./img/works/work-04.jpg" srcset="./img/works/work-04@2x.jpg" alt="Alt" class="work__img">
-                        </div>
-
-                        <div class="work__header">
-                            <h3 class="work__title"><a href="#Solar" class="work__title-link">Solar</a></h3>
-                            <a href="#Webdesign" class="work__category">Webdesign</a>
-                        </div>
-
-                        <a href="#Solar" class="work__link">
-                            <div class="work__link-icon">
-                                <div class="round-icon">
-                                    <img src="./img/ui/ui-arrow.svg" alt="">
-                                </div>
-                                Work space graphics. Webdesign
-                            </div>
-                        </a>
-                    </article> -->
-
-                </div>
+                    </div>
+                <!-- </div> -->
             </div>
         </section>
 
-        <div class="container">
+        <!-- <div class="container"> -->
             <!-- <h2 class="title-1" data-lang="projects">Projects</h2> -->
             <!-- <h2 class="h1" data-lang="projects">Selected <span>Works</span></h2> -->
-            <ul class="projects">
+            <!-- <ul class="projects"> -->
                 <!-- <picture>
                     <source srcset="./img/premium/pict1.webp 1x, ./img/premium/pict1@2x.webp 2x" type="image/webp">
                     <source srcset="./img/premium/pict1.jpg 1x, ./img/premium/pict1@2x.jpg 2x" type="image/jpeg">
@@ -199,8 +142,8 @@
                     </a>
                 </li>
   -->
-            </ul>
-        </div>
+            <!-- </ul>
+        </div> -->
 
     </main>
 
@@ -279,6 +222,15 @@
             </div>
         </div> -->
     </footer>
+
+    <!-- Библиотеки -->
+    <!-- <script src="./libs/scrollreveal.js"></script> -->
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Программный скрипт -->
+    <!-- <script src="./js/modules/mobile-nav.js"></script> -->
+    <!-- <script src="./js/modules/scroll-reveal.js"></script> -->
+    <script src="./js/modules/swiper.js"></script>
 
     <script src="./js/projects.js"></script>
     <script src="./js/main.js"></script>

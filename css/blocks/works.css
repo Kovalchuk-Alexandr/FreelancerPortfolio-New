@@ -28,9 +28,11 @@
 }
 
 .works__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 28px;
+    row-gap: 30px; */
 }
 
 @media (max-width: 640px) {

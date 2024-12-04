@@ -428,6 +428,10 @@ const globalTexts = {
         ru: "Проекты",
         en: "Projects",
     },
+    seeall: {
+        ru: "Все проекты",
+        en: "SEE ALL",
+    },
     "skills-mn": {
         ru: "Навыки",
         en: "Skills",

@@ -117,7 +117,7 @@
 
 .lang__item {
   margin: 0 auto;
-  color: var(--accent);
+  color: var(--text-muted);
   opacity: 0.8;
   transition: all 0.2s ease-in;
 }

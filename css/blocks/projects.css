@@ -13,10 +13,11 @@
   /* max-width: 370px; */
   aspect-ratio: 450/322;
   width: 420px;
+  width: 520px;
+  /* height: 640px; */
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
-
   background-color: var(--background-muted-2);
   background-image: image-set(
       url('./../../img/projects/overlay-noise.png') 1x,

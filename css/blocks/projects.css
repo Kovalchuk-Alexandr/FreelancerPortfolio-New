@@ -10,11 +10,10 @@
 
 .project {
   position: relative;
-  /* max-width: 370px; */
+  max-width: 400px;
   aspect-ratio: 450/322;
-  width: 420px;
-  width: 520px;
-  /* height: 640px; */
+  width: 100%;
+
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
@@ -29,8 +28,7 @@
 
 .project__img-wrapper {
   width: 100%;
-  height: 80%;
-  
+  /* height: 80%; */
 }
 
 .project::after {

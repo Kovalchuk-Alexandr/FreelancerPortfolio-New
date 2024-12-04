@@ -345,27 +345,27 @@ function setSelectedWorks() {
             } else videoIcon = "";
 
             // Шаблон карточки проекта
-            let text = `<li class="project swiper-slide" onclick="projectDetails(${
+            let text = `<li class="work swiper-slide" onclick="projectDetails(${
                 item.id
             })">
                 <a href="./project-page.html">
-                        <div class="project__img-wrapper">
+                        <div class="work__img-wrapper">
                             <picture>
                                 <source srcset="./img/projects/${
-                                    item.img
+                                    item.imgBig
                                 }.webp " type="image/webp">
                                 <source srcset="./img/projects/${
-                                    item.img
+                                    item.imgBig
                                 }.jpg " type="image/jpeg">
                                 <img src="./img/projects/${
-                                    item.img
-                                }.jpg" alt="Project img" class="project__img">
+                                    item.imgBig
+                                }.jpg" alt="Project img" class="work__img">
                             </picture>
                         </div>
-                        <h3 class="project__title">${
+                        <h3 class="work__title">${
                             item["title"][langActiveName.toLowerCase()]
                         }</h3>
-                        <div class="project__icon">${videoIcon}</div>
+                        <div class="work__icon">${videoIcon}</div>
                     </a>
                 </li`;
 

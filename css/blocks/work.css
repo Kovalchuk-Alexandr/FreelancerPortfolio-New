@@ -1,0 +1,69 @@
+.work {
+  position: relative;
+  /* max-width: 370px; */
+  /* aspect-ratio: 450/322; */
+  /* width: 420px;
+  width: 520px; */
+  /* height: 600px; */
+  background-color: var(--project-card-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  background-color: var(--background-muted-2);
+  /* background-image: image-set(
+      url('./../../img/projects/overlay-noise.png') 1x,
+      url('./../../img/projects/overlay-noise@2x.png') 2x
+  );
+  mix-blend-mode: difference; */
+  /* transition: all 0.3s ease-in; */
+}
+
+.project__img-wrapper {
+  /* width: 100%;
+  height: 80%; */
+  
+}
+
+.work__img {
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center top;
+  overflow: hidden;
+}
+
+.work__title {
+  position: absolute;
+
+  padding: 8px 20px;
+  
+  left: 50%;
+  bottom: 4px;
+  
+  transform: translateX(-50%);
+  /* width: 60%; */
+  z-index: 9;
+  
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: var(--text-default);
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  backdrop-filter: blur(30px);
+  background: var(--background-muted-2);
+  backdrop-filter: blur(9px);
+  background: rgba(23, 23, 23, 0.6);
+}
+
+.work__icon {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 25px;
+  /* background-size: 20px; */
+}

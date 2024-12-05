@@ -31,6 +31,7 @@ font-family: 'Poppins', sans-serif;
 @import './blocks/works.css';
 @import './blocks/work.css';
 @import './blocks/banner.css';
+@import './blocks/about.css';
 @import './blocks/projects.css';
 @import './pages/projects-details.css';
 @import './pages/skills.css';

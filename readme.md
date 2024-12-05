@@ -9,4 +9,4 @@
 - Multi Lang
 - Мобильная адаптация
 
-[Смотреть демо](https://kovalchuk-alexandr.github.io/freelancer_portfolio_my/)
+[Смотреть демо](https://kovalchuk-alexandr.github.io/FreelancerPortfolio-New/)

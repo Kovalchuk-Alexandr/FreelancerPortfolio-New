@@ -7,7 +7,5 @@ git remote add origin https://github.com/Kovalchuk-Alexandr/FreelancerPortfolio-
 git push -u origin master
 
 https://kovalchuk-alexandr.github.io/FreelancerPortfolio-New/
-FreelancerPortfolio-New
-
 
 проработав в IT Privatbank 27 лет, наконец могу заняться тем, что нравится и приносит удовольствие. Закончил курсы "Java Developer","NodeJS/Fullstack Developer". И вот я здесь!

@@ -2,13 +2,13 @@
     position: relative;
     padding-top: 120px;
     padding-bottom: 80px;
-    background-image: image-set(
+    /* background-image: image-set(
         url('./../../img/hero/hero.png') 1x,
         url('./../../img/hero/hero@2x.png') 2x);
     background-position:  center 29px; /* x y */
-    /* background-size: cover; */
+    /*background-size: cover;
     background-repeat: no-repeat;
-    mix-blend-mode: lighten;
+    mix-blend-mode: lighten; */
 }
 
 .about__nameline-row {
@@ -116,15 +116,28 @@
 .about__content {
     display: grid;
     gap: 32px;
-
-}
-
-.about__desc {
+    
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
     color: var(--text-muted);
+
+}
+
+.about__desc {
+    /* font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-muted); */
+}
+
+.about__name {
+    font-family: "Gambetta", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    text-wrap: nowrap;
 }
 
 .about__social {
@@ -149,7 +162,7 @@
     background: var(--background-muted);
 }
 
-.about__social a {transition: filter 0.3s ease-in;}
+.about__social a {/* transition: filter 0.3s ease-in; */}
 
 .about__social a:hover {filter: brightness(1.1);}
 

@@ -9,3 +9,6 @@ git push -u origin master
 https://kovalchuk-alexandr.github.io/FreelancerPortfolio-New/
 
 проработав в IT Privatbank 27 лет, наконец могу заняться тем, что нравится и приносит удовольствие. Закончил курсы "Java Developer","NodeJS/Fullstack Developer". И вот я здесь!
+
+Having worked at IT Privatbank for 27 years, I can finally do what I like and enjoy. Completed the courses 'Java Developer', 'NodeJS/Fullstack Developer'.
+And here I am!

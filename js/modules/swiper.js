@@ -13,9 +13,9 @@ const swiper = new Swiper(".swiper", {
     /* Autoplay */
     // centeredSlides: true,
     // autoplay: {
-    //     delay: 2500,
+    //     delay: 5000,
     //     disableOnInteraction: false,
-    //     reverseDirection: true, //обратное направление
+    //     // reverseDirection: true, //обратное направление
     // },
     effect: "coverflow",
     grabCursor: true,
@@ -23,7 +23,7 @@ const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,
-        stretch: 1,
+        stretch: 0,
         depth: 100,
         modifier: 1,
         slideShadows: true,

@@ -385,18 +385,33 @@ const projects = [
 // Названия статических надписей
 const globalTexts = {
     greating: {
-        ru: "Приветствую, я",
-        en: "Hi, I am ",
+        ru: "Здравия! Я ",
+        en: "Hi, I'm ",
     },
     name: {
-        ru: "Александр Ковальчук",
-        en: "Alexander Kovalchuk",
+        ru: "Александр Ковальчук.",
+        en: "Alexander Kovalchuk.",
     },
     aboutme: {
         // ru: "фронтэнд разработчик",
         // en: "a frontend developer",
         ru: "вэб разработчик",
         en: "web developer",
+    },
+    aboutdesc: {
+        ru: "Проработав в IT Privatbank 27 лет, наконец могу заняться тем, что нравится и приносит удовольствие. Закончил курсы 'Java Developer', 'NodeJS/Fullstack Developer'.<br>И вот я здесь!",
+        en: "Having worked at IT Privatbank for 27 years, I can finally do what I like and enjoy. Completed the courses 'Java Developer', 'NodeJS/Fullstack Developer'.<br> And here I am!",
+        // ru: "Здравия! Я Ковальчук Александр.<br>Проработав в IT Privatbank 27 лет, наконец могу заняться тем, что нравится и приносит удовольствие. Закончил курсы 'Java Developer', 'NodeJS/Fullstack Developer'.<br>И вот я здесь!",
+        // en: "Hi! I'm Alexander Kovalchuk.<br>Having worked at IT Privatbank for 27 years, I can finally do what I like and enjoy. Completed the courses 'Java Developer', 'NodeJS/Fullstack Developer'.<br> And here I am!",
+        // en: "Hi, I'm Arik Andersson - a freelancer specializing in premium web design, development, and SEO services. I'm passionate about creating unique and effective solutions for my clients, and I bring a personal touch to every project. Let's work together to bring your vision to life!",
+    },
+    slogan1: {
+        ru: "Вэбсайт",
+        en: "A website that leaves  ",
+        span: {
+            ru: "с долгим послевкусием!",
+            en: "a lasting impression!",
+        },
     },
     slogan: {
         // ru: "со страстью к знаниям и творчеству",
@@ -406,7 +421,7 @@ const globalTexts = {
         ru: "вэбсайт выкованный с душой",
         en: "website forged with soul",
     },
-    "btn-load": {
+    download: {
         ru: "Загрузить резюме",
         en: "Download CV",
     },

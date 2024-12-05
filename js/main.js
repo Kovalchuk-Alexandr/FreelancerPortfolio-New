@@ -86,7 +86,7 @@ if (localStorage.getItem("lang") != undefined) {
     langActiveName = localStorage.getItem("lang");
 } else {
     // Устанавливаем язык по-умолчанию 'RU'
-    langActiveName = "RU";
+    langActiveName = "EN";
     localStorage.setItem("lang", langActiveName);
 }
 
@@ -122,30 +122,9 @@ function changeLang() {
         let aboutme = globalTexts["aboutme"][langActiveName.toLowerCase()];
         let about = globalTexts["about"][langActiveName.toLowerCase()];
         let slogan = globalTexts["slogan"][langActiveName.toLowerCase()];
-        let btnLoad = globalTexts["btn-load"][langActiveName.toLowerCase()];
+        // let btnLoad = globalTexts["btn-load"][langActiveName.toLowerCase()];
 
-        let resumeURLru =
-            "https://docs.google.com/document/d/1sh2D9XNrhXUHriTJ5jau8URiod3V5TtO/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
-        let resumeURLen =
-            "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
-
-        // let resumeURL = "https://itproger.com/img/courses/1637133308.jpg";
-
-        let resumeURL = "";
-
-        switch (langActiveName.toLowerCase()) {
-            case "en":
-                resumeURL = resumeURLen;
-                break;
-            case "ru":
-                resumeURL = resumeURLru;
-                break;
-
-            default:
-                resumeURL = resumeURLru;
-                break;
-        }
-
+        
         header.innerHTML = `<h1 class="header__title">
                 ${aboutme}
             </h1>
@@ -177,12 +156,52 @@ function changeLang() {
                     let text1 =
                         globalTexts[key]["span"][langActiveName.toLowerCase()];
                     text += ` <span>${text1}</span>`;
+                } else if (key == "slogan1") {
+                    let text1 =
+                        globalTexts[key]["span"][langActiveName.toLowerCase()];
+                    text += ` <span>${text1}</span>`;
                 }
 
                 element.innerHTML = text;
             });
         }
     }
+
+    // Рендер кнопки загрузки CV
+    function setBtnCV() {
+        let btnCV = document.querySelector(".about__social");
+
+        if (btnCV) {
+            let btnLoad = globalTexts["download"][langActiveName.toLowerCase()];
+
+            let resumeURLru =
+                "https://docs.google.com/document/d/1sh2D9XNrhXUHriTJ5jau8URiod3V5TtO/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
+            let resumeURLen =
+                "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
+
+            // let resumeURL = "https://itproger.com/img/courses/1637133308.jpg";
+
+            let resumeURL = "";
+
+            switch (langActiveName.toLowerCase()) {
+                case "en":
+                    resumeURL = resumeURLen;
+                    break;
+                case "ru":
+                    resumeURL = resumeURLru;
+                    break;
+
+                default:
+                    resumeURL = resumeURLru;
+                    break;
+            }
+
+            btnCV.innerHTML = `<a href="${resumeURL}" class="btn " target='_blank' download>${btnLoad}</a>`;
+            // <a href="${resumeURL}" class="btn" download='resume.jpg' target='_blank'>${btnLoad} </a>`
+        }
+    }
+
+    setBtnCV();
 
     // Если на странице 'projectDetailes' - заполняем ее
     const projectDetailes = document.querySelector(".project-detailes");

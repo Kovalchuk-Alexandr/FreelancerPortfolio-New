@@ -92,7 +92,7 @@
 
 .nav-list__link {
   color: var(--header-text);
-  color: var(--text-color);
+  color: var(--text-default);
   transition: opacity 0.2s ease-in;
 }
 
@@ -125,7 +125,7 @@
 .lang__item--active {
   opacity: 1;
   color: var(--header-text);
-  color: var(--text-color);
+  color: var(--text-default);
   cursor: auto;
 }
 

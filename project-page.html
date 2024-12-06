@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+</head>
+<body>
+    <nav class="nav ">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
+
+                <div class="lang">
+                    <a href="#" class="lang__item">EN</a>
+                    <a href="#" class="lang__item lang__item--active">RU</a>
+                </div>
+
+                <button class="dark-mode-btn ">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-lst__item"><a href="./index.html#projects" class="nav-list__link nav-list__link--active" data-lang="projects-mn">Projects</a></li>
+                    <li class="nav-lst__item"><a href="./skills.html" class="nav-list__link" data-lang="skills-mn">Skills</a></li>
+                    <li class="nav-lst__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <main class="section ">
+        <div class="container">
+            <div class="project-detailes">
+                
+                <h1 class="title-1"></h1>
+
+                <a href="#!" class="video__link" >
+                    <svg class="play__icon" xmlns="http://www.w3.org/2000/svg">
+                         <!-- width="60" height="42.46" -->
+                        <g>
+                        <title>Play</title>
+                        <path fill="#000000" id="svg_1" d="m47.54,0l-35.08,0a12.46,12.46 0 0 0 -12.46,12.46l0,17.54a12.46,12.46 0 0 0 12.46,12.46l35.08,0a12.46,12.46 0 0 0 12.46,-12.46l0,-17.54a12.46,12.46 0 0 0 -12.46,-12.46zm-8.43,22.08l-16.41,7.83a0.66,0.66 0 0 1 -0.94,-0.59l0,-16.15a0.66,0.66 0 0 1 1,-0.59l16.37,8.32a0.66,0.66 0 0 1 -0.02,1.18z"/>
+                        </g>
+                    </svg>
+
+                    <!-- <img src="./img/video/video_black.svg" alt="" class="video__icon">
+                    <img src="./img/video/video_red.svg" alt="" class="video__icon--active"> -->
+
+
+                    <!-- <img src="./img/video/video-img.jpg" alt="" class="video__img"> -->
+                    <img src="" alt="" class="project-detailes__cover video__img">
+                </a>
+
+                <div class="project-detailes__desc">
+                    <p></p>
+                </div>
+            
+                <a href="#!" class="btn-outline">
+                    <img src="./img/icons/gitHub-black.svg" alt="">
+                    GitHub repo
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/icons/vk.svg" alt="VK"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/instagram.svg" alt="instagram"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/twitter.svg" alt="twitter"></a></li>
+                    <li class="social__item"><a href="https://github.com/Kovalchuk-Alexandr"><img src="./img/icons/gitHub.svg" alt="gitHub"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/icons/linkedIn.svg" alt="linkedIn"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2024 frontend-dev.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- YouTube Lightbox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+    <script src="./js/projects.js"></script>
+    <!-- <script src="./js/projects-detailes.js"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

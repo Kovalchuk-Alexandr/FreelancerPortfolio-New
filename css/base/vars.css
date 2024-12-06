@@ -5,7 +5,10 @@
     --text-inverse: #0e0e0e;
     --text-inverse-muted: rgba(255, 255, 255, 0.6);
     --background-default: #0e0e0e;
+    --background-default-ft: #181716;
     --background-primary: #dac5a7;
+    --background-light: #fefaee;
+    --background-light: #fff6db;
     --background-darkmode: #746450;
     --background-secondary: #1a1a1a;
     --background-muted: rgba(218, 197, 167, 0.05);
@@ -67,9 +70,8 @@
   --accent: var(--purple);
 
   /* Light mode */
-  --page-bg: var(
-  --white);
-  --text-color: var(--black);
+  --page-bg: var(--background-light);
+  --text-color: var(--text-inverse);
   --title-1: var(--accent);
 
   /* для карточек */

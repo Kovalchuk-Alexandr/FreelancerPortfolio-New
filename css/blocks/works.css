@@ -19,7 +19,7 @@
     font-weight: 300;
     font-size: 64px;
     line-height: 110%;
-    color: var(--text-default);
+    color: var(--text-color);
 }
 
 .works__title span {

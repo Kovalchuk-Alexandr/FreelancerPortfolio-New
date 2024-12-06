@@ -10,7 +10,7 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     text-wrap: nowrap;
-    color: var(--text-default);
+    color: var(--text-color);
 
     transition: filter 0.2s ease-in;
 }
@@ -22,13 +22,15 @@
     height: 32px;
     width: 32px;
 
-    background-image: url('./../../img/ui/ui-link-icon.svg');
+    background-image: url('./../../img/ui/ui-link-icon-dark.svg');
     background-position: center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
 
     transition: transform 0.2s ease-in;
 }
+
+.dark .link::before {background-image: url('./../../img/ui/ui-link-icon.svg');}
 
 .link:hover {
     /* opacity: 0.85; */

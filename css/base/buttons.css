@@ -58,8 +58,8 @@
     padding: 10px 16px;
     /* width: 111px; */
     height: 41px;
-    background: var(--text-default);
-    color: var(--text-inverse);
+    background: var(--text-color);
+    color: var(--page-bg);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 13px;
@@ -74,15 +74,15 @@
 
 .btn:hover, .btn:focus,
 a.btn:hover, a.btn:focus {
-    background-color: var(--background-secondary);
-    color: var(--text-default);
-    outline: 1px solid var(--text-default);
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    outline: 1px solid var(--text-color);
 }
 
 .btn:active {
     background-color: var(--background-secondary) !important;
-    color: var(--text-default) !important;
-    outline: 1px solid var(--text-default);
+    color: var(--text-color) !important;
+    outline: 1px solid var(--text-color);
 }
 
 .btn-link {

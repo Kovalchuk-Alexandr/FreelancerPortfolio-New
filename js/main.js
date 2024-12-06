@@ -175,7 +175,7 @@ function changeLang() {
             let btnLoad = globalTexts["download"][langActiveName.toLowerCase()];
 
             let resumeURLru =
-                "https://docs.google.com/document/d/1sh2D9XNrhXUHriTJ5jau8URiod3V5TtO/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
+                "https://docs.google.com/document/d/1y5QVsnCcs_rxeOIufdsyObcJFbBFzg4T/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
             let resumeURLen =
                 "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
 

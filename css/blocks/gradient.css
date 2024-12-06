@@ -1,0 +1,9 @@
+.gradient {
+    width: 100%;
+    height: 50px;
+    filter: blur(5px);
+    background-color: #040301;
+    background: linear-gradient(to bottom right, #040301 -10% 5%, var(--background-light));
+}
+
+.dark .gradient {display: none;}

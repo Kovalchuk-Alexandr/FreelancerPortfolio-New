@@ -6,6 +6,9 @@
     /* width: 100%; */
     height: 53px;
     background: rgba(218, 197, 167, 0.1);
+    background: var(--background-default-ft);
+    /* background: var(--background-muted); */
+    backdrop-filter: blur(5px);
 }
 
 .banner__row {

@@ -28,6 +28,7 @@ font-family: 'Poppins', sans-serif;
 @import './blocks/dark-mode-btn.css';
 @import './blocks/link.css';
 @import './blocks/header.css';
+@import './blocks/gradient.css';
 @import './blocks/works.css';
 @import './blocks/work.css';
 @import './blocks/banner.css';

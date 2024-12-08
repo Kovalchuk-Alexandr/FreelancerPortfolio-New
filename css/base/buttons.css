@@ -53,15 +53,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 8px;
+    column-gap: 12px;
     border-radius: 8px;
     padding: 10px 16px;
     /* width: 111px; */
     height: 41px;
     background: var(--text-color);
     color: var(--page-bg);
+    fill: var(--page-bg);
     font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     line-height: 160%;
     letter-spacing: 0.12em;
@@ -86,7 +87,7 @@ a.btn:hover, a.btn:focus {
 }
 
 .btn-link {
-    /* transition: all 0.3s ease-in; */
+    transition: all 0.3s ease-in;
     margin: 0 auto;
 }
 
@@ -96,12 +97,33 @@ a.btn:hover, a.btn:focus {
     width: 18px;
     height: 19px;
     
-    background-image: url('./../../img/ui/ui-arrow-top-right.svg');
-    background-repeat: no-repeat;
+    background-image: url('./../../img/ui/ui-arrow-top-right-inverse.svg');
 
     transition: all 0.3s ease-in;
 }
 
 .btn-link:hover::after {
+  background-image: url('./../../img/ui/ui-arrow-top-right.svg');
+}
+
+.dark .btn-link::after {background-image: url('./../../img/ui/ui-arrow-top-right.svg');}
+
+.dark .btn-link:hover::after {
     background-image: url('./../../img/ui/ui-arrow-top-right-inverse.svg');
 }
+
+.btn-link::before {
+    content: '';
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('./../../img/social/github-icon-stroke1.svg');
+   
+    transition: all 0.3s ease-in;
+}
+
+.btn-link:hover:before {background-image: url('./../../img/social/github-icon-stroke.svg');}
+
+.dark .btn-link::before {background-image: url('./../../img/social/github-icon-stroke.svg');}
+.dark .btn-link:hover:before {background-image: url('./../../img/social/github-icon-stroke1.svg');}

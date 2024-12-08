@@ -286,10 +286,10 @@ function changeLang() {
 
         if (gitRef != "") {
             document
-                .querySelector(".btn-outline")
+                .querySelector(".btn")
                 .setAttribute("href", `${gitRef}`);
             document
-                .querySelector(".btn-outline")
+                .querySelector(".btn")
                 .setAttribute("target", "_blank");
 
             gitTitle =

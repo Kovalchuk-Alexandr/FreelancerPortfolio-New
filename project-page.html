@@ -9,28 +9,36 @@
     <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 <body>
-    <nav class="nav ">
-        <div class="container">
+    <nav class="nav nav-projects">
+        <!-- <div class="container"> -->
             <div class="nav-row">
-                <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
-
-                <div class="lang">
-                    <a href="#" class="lang__item">EN</a>
-                    <a href="#" class="lang__item lang__item--active">RU</a>
-                </div>
-
-                <button class="dark-mode-btn ">
-                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                </button>
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo/aka-180.png" class="logo__img" width="48" alt="AKA Logo">
+                    <!-- <strong>Freelancer</strong> portfolio -->ALEX SMITH
+                </a>
 
                 <ul class="nav-list">
-                    <li class="nav-lst__item"><a href="./index.html#projects" class="nav-list__link nav-list__link--active" data-lang="projects-mn">Projects</a></li>
-                    <li class="nav-lst__item"><a href="./skills.html" class="nav-list__link" data-lang="skills-mn">Skills</a></li>
-                    <li class="nav-lst__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li>
+                    <li class="nav-lst__item"><a href="./index.html#" class="nav-list__link nav-list__link" data-lang="home">Home</a></li>
+                    <li class="nav-lst__item"><a href="./index.html#about" class="nav-list__link nav-list__link" data-lang="about">About</a></li>
+                    <li class="nav-lst__item"><a href="./index.html#works" class="nav-list__link" data-lang="selected">Sel.Works</a></li>
+                    <li class="nav-lst__item"><a href="./projects.html" class="nav-list__link nav-list__link--active" aria-disabled="true" data-lang="projectsMenu">Projects</a></li>
+                    <!-- <li class="nav-lst__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li> -->
                 </ul>
+
+                <div class="nav-btn-set">
+                    <div class="lang">
+                        <a href="#" class="lang__item">EN</a>
+                        <a href="#" class="lang__item lang__item--active">RU</a>
+                    </div>
+    
+                    <button class="dark-mode-btn ">
+                        <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                        <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                    </button>
+                </div>
+
             </div>
-        </div>
+        <!-- </div> -->
     </nav>
    
     <main class="section ">
@@ -48,11 +56,6 @@
                         </g>
                     </svg>
 
-                    <!-- <img src="./img/video/video_black.svg" alt="" class="video__icon">
-                    <img src="./img/video/video_red.svg" alt="" class="video__icon--active"> -->
-
-
-                    <!-- <img src="./img/video/video-img.jpg" alt="" class="video__img"> -->
                     <img src="" alt="" class="project-detailes__cover video__img">
                 </a>
 
@@ -60,32 +63,74 @@
                     <p></p>
                 </div>
             
-                <a href="#!" class="btn-outline">
-                    <img src="./img/icons/gitHub-black.svg" alt="">
-                    GitHub repo
-                </a>
+                <a href="#!" class="btn btn-link">GitHub repo</a>
 
             </div>
 
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <ul class="social">
-                    <li class="social__item"><a href="#!"><img src="./img/icons/vk.svg" alt="VK"></a></li>
-                    <li class="social__item"><a href="#!"><img src="./img/icons/instagram.svg" alt="instagram"></a></li>
-                    <li class="social__item"><a href="#!"><img src="./img/icons/twitter.svg" alt="twitter"></a></li>
-                    <li class="social__item"><a href="https://github.com/Kovalchuk-Alexandr"><img src="./img/icons/gitHub.svg" alt="gitHub"></a></li>
-                    <li class="social__item"><a href="#!"><img src="./img/icons/linkedIn.svg" alt="linkedIn"></a></li>
-                </ul>
-                <div class="copyright">
-                    <p>© 2024 frontend-dev.com</p>
+    <footer class="footer"> 
+        <div class="container-footer">
+            <div class="footer__menu">
+                 <a href="#!" class="logo footer__logo">
+                    <img src="./img/logo/aka-180.png" alt="logo" class="logo-img">
+                 </a>
+
+                 <nav class="footer__nav">
+                    <h4 class="footer-nav-title" data-lang="pages">Pages</h4>
+                    <ul class="footer-nav-list">
+                        <li class="nav-item"><a href="./index.html#" class="footer-nav-link" data-lang="home">Home</a></li>
+                        <li class="nav-item"><a href="./index.html#about" class="footer-nav-link" data-lang="about">About</a></li>
+                        <li class="nav-item"><a href="./index.html#works" class="footer-nav-link" data-lang="selected">Sel.Works</a></li>
+                        <li class="nav-item"><a href="#" class="footer-nav-link" data-lang="projectsMenu" >Projects</a></li>
+                    </ul>
+
+                    <!-- <button class="nav__btn btn btn-link">Get in touch</button> -->
+                 </nav>
+
+                 <nav class="footer__nav footer__nav--contacts">
+                    <h4 class="footer-nav-title" data-lang="contacts">Contacts</h4>
+                    <ul class="footer-nav-list">
+                        <li class="nav-item">
+                            <a href="tel:+38062252505" class="footer-nav-link">
+                                <img src="./img/social/yellow_phone_icon.png" width="26" alt="Phone">
+                                <span>+38 068 225 25 05</span> 
+                            </a></li>
+                        <li class="nav-item">
+                            <a href="mailto:mo250568kaa@gmail.com" target="_blank" class="footer-nav-link">
+                                <img src="./img/social/gmail_icon.png" width="24" alt="Gmail">
+                                mo250568kaa@gmail.com
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://t.me/Kovalchuk_Alex" target="_blank" class="footer-nav-link">
+                                <img src="./img/social/telegram_icon.svg" width="24" alt="Telegram">
+                                Kovalchuk_Alex
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/Kovalchuk-Alexandr" target="_blank"  class="footer-nav-link">
+                                <img src="./img/social/github-icon-stroke1.svg" width="24" alt="Github">
+                                Kovalchuk-Alexandr
+                            </a>
+                        </li>
+                    </ul>
+                 </nav>
+
+            </div>
+
+            <div class="footer__row">
+                <div class="footer__copyright">© 2024 Made by Alex Kovalchuk.</div>
+                <div class="footer__back-top">
+                    <div class="btotop__text" data-lang="gotop">To Top</div>
+                    <a href="#" class="btotop__btn">
+                        <img class="btotop__btn-img" src="./img/ui/ui-arrow-top.svg" alt="back to home btn">
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
     
     <!-- YouTube Lightbox -->
     <div id="youtubelightbox" class="youtubelightbox">

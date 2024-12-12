@@ -21,8 +21,10 @@
     --icon-inverse: #0e0e0e;
 
     /* Fonts */
+    /* --font-family: "Satoshi", sans-serif;
+    --second-family: "Chillax", sans-serif; */
     --font-family: "Satoshi", sans-serif;
-    --second-family: "Chillax", sans-serif;
+    --second-family: "Chillax";
 
     /* Timeline */
     --padding: 48px;

@@ -1,15 +1,12 @@
 /* Dark mode button */
 .dark-mode-btn {
-  order: 9; /* делаем кнопку-переключатель последним */
-  
+  /* order: 9; */ /* делаем кнопку-переключатель последним */
   position: relative;
   display: flex;
   justify-content: space-between;
-
   width: 51px;
   height: 26px;
   padding: 5px;
-
   border-radius: 50px;
   background-color: #272727;
   background-color: var(--background-darkmode);

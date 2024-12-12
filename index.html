@@ -17,14 +17,15 @@
             <div class="nav-row">
                 <a href="./index.html" class="logo">
                     <img src="./img/logo/aka-180.png" class="logo__img" width="48" alt="AKA Logo">
-                    <!-- <strong>Freelancer</strong> portfolio -->ALEX SMITH
+                    <!-- <strong>Freelancer</strong> portfolio -->
+                    <span>ALEX SMITH</span> 
                 </a>
 
                 <ul class="nav-list">
                     <li class="nav-lst__item"><a href="#" class="nav-list__link nav-list__link--active" data-lang="home">Home</a></li>
-                    <li class="nav-lst__item"><a href="#about" class="nav-list__link nav-list__link" data-lang="about">About</a></li>
+                    <li class="nav-lst__item"><a href="#about" class="nav-list__link" data-lang="about">About</a></li>
                     <li class="nav-lst__item"><a href="#works" class="nav-list__link" data-lang="selected">Sel.Works</a></li>
-                    <li class="nav-lst__item"><a href="./projects.html" class="nav-list__link nav-list__link" data-lang="projectsMenu">Projects</a></li>
+                    <li class="nav-lst__item"><a href="./projects.html" class="nav-list__link" data-lang="projectsMenu">Projects</a></li>
                     <!-- <li class="nav-lst__item"><a href="./pages/contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li> -->
                 </ul>
 
@@ -37,6 +38,13 @@
                     <button class="dark-mode-btn ">
                         <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
                         <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                    </button>
+
+                    <!-- Mobile button open -->
+                    <button class="mobile-nav-btn">
+                        <!-- Если используются разные кнопки для откр/закр -->
+                        <img class="nav-img" src="./img/ui/menu_right.svg" alt="Menu button" >
+                        <!-- <div class="mobile-nav-btn__icon"></div> -->
                     </button>
                 </div>
 
@@ -63,12 +71,56 @@
         </div>
     </header>
 
+    <!-- Mobile button open -->
+    <!-- <button class="mobile-nav-btn">
+        <div class="mobile-nav-btn__icon"> -->
+            <!-- Если используются разные кнопки для откр/закр -->
+            <!-- <img class="nav-img" src="./img/ui/menu_right.svg" alt="Menu button" > -->
+        <!-- </div>
+    </button> -->
+
+    <!-- ======= Мобильная навигация  ============================ -->
+    <div class="mobile-nav ">
+        <!-- Если используются разные кнопки для откр/закр -->
+        <button class="mobile-close-btn">
+            <img src="./img/ui/close_round.svg" alt="Close button" width="24" height="24">
+        </button>
+
+         <div class="nav-btn-set">
+            <div class="lang">
+                <a href="#" class="lang__item lang__item--active mobile-lang__item">EN</a>
+                <a href="#" class="lang__item mobile-lang__item">RU</a>
+            </div>
+    
+            <button class="dark-mode-btn ">
+                <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+            </button>
+
+        </div>
+
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link" data-lang="home">Home</a></li>
+            <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link " data-lang="about">About</a></li>
+            <li class="mobile-nav-item"><a href="#works" class="mobile-nav-link" data-lang="selected">Sel.Works</a></li>
+            <li class="mobile-nav-item"><a href="./projects.html" class="mobile-nav-link" data-lang="projectsMenu">Projects</a></li>
+        </ul>
+
+        <a href="./index.html" class="nav__logo">
+            <img src="./img/logo/aka-180.png" class="logo__img" width="48" alt="AKA Logo">
+            <span>ALEX SMITH</span> 
+        </a>
+    </div>
+
+    <!-- ======= Fade для мобильной навигации  =================== -->
+	<div class="mobile-nav-fade"></div>
+
     <div class="gradient none">
         <div class="container"></div>
     </div>
 
     <main class=" " id="projects">
-        <section class="works " id="works">
+        <section class="works none" id="works">
             <div class="container">
                 <div class="works__header">
                     <h2 class="works__title" data-lang="projects">
@@ -84,7 +136,7 @@
                         <!-- Slider main container -->
                         <div class="swiper">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper works__grid">
+                            <ul class="swiper-wrapper works__grid">
                                 <!-- Slides -->
                                 <!-- <div class="swiper-slide">
                                     <div class="swiper-slide-text"> Slide 1</div>
@@ -99,7 +151,7 @@
                                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                                 </div> -->
                                 
-                            </div>
+                            </ul>
                             <!-- Pagination -->
                             <!-- <div class="swiper-pagination"></div> -->
                     
@@ -145,11 +197,10 @@
                         <h3 class="project__title">Video service</h3>
                     </a>
                 </li>
-  -->
-            <!-- </ul>
+            </ul>
         </div> -->
 
-        <section class="banner ">
+        <section class="banner none">
             <h2 class="visually-hidden">Banner</h2>
             <div class="container-wide">
                 <div class="banner__row">
@@ -182,7 +233,7 @@
             </div>
         </section>
 
-        <section class="about " id="about">
+        <section class="about none" id="about">
             <div class="container">
                 <div class="about__img">
                     <img src="./img/about/Image.jpg" alt="">
@@ -209,7 +260,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="container-footer">
             <div class="footer__menu">
                  <a href="#!" class="logo footer__logo">
@@ -290,8 +341,8 @@
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
 
     <!-- Программный скрипт -->
-    <!-- <script src="./js/modules/mobile-nav.js"></script> -->
     <!-- <script src="./js/modules/scroll-reveal.js"></script> -->
+    <script src="./js/modules/mobile-nav.js"></script>
     <script src="./js/modules/swiper.js"></script>
 
     <script src="./js/projects.js"></script>

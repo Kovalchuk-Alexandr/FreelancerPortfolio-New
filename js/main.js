@@ -1,6 +1,6 @@
 // https://ru.stackoverflow.com/questions/1047732/%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%BC-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BE%D0%BC
 
-const btnDarkMode = document.querySelector(".dark-mode-btn");
+const btnDarkMode = document.querySelectorAll(".dark-mode-btn");
 var projectsAll = document.querySelector("main .projects");
 var selectedWorks = document.querySelector(".works__grid");
 
@@ -24,17 +24,11 @@ if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark").matches
 ) {
-    btnDarkMode.classList.add("dark-mode-btn--active");
+    btnDarkMode.forEach((el) => {
+        el.classList.add("dark-mode-btn--active");
+    });
+    // btnDarkMode.classList.add("dark-mode-btn--active");
     document.body.classList.add("dark");
-}
-
-// Проверка темной темы в localStorage
-if (localStorage.getItem("darkMode") === "dark") {
-    btnDarkMode.classList.add("dark-mode-btn--active");
-    document.body.classList.add("dark");
-} else if (localStorage.getItem("darkMode") === "light") {
-    btnDarkMode.classList.remove("dark-mode-btn--active");
-    document.body.classList.remove("dark");
 }
 
 // Если меняются системные настройки (если автоматически в течении дня система
@@ -58,27 +52,57 @@ window
         }
     });
 
+// ===============  Работа с блоком 'Theme' - переключение темы  =================================
+// Проверка темной темы в localStorage
+if (localStorage.getItem("darkMode") === "dark") {
+    btnDarkMode.forEach((el) => {
+        el.classList.add("dark-mode-btn--active");
+    });
+    // btnDarkMode.classList.add("dark-mode-btn--active");
+    document.body.classList.add("dark");
+} else if (localStorage.getItem("darkMode") === "light") {
+    btnDarkMode.forEach((el) => {
+        el.classList.remove("dark-mode-btn--active");
+    });
+    // btnDarkMode.classList.remove("dark-mode-btn--active");
+    document.body.classList.remove("dark");
+}
+
 // Включение ночного режима по кнопке
-btnDarkMode.onclick = () => {
-    btnDarkMode.classList.toggle("dark-mode-btn--active");
+btnDarkMode.forEach((el) => {
+    el.onclick = () => {
+        el.classList.toggle("dark-mode-btn--active");
 
-    // Определяем, какой режим включен
-    const isDark = document.body.classList.toggle("dark");
+        // Определяем, какой режим включен
+        const isDark = document.body.classList.toggle("dark");
 
-    // Сохраняем режим в localStorage
-    if (isDark) {
-        localStorage.setItem("darkMode", "dark");
-    } else {
-        localStorage.setItem("darkMode", "light");
-    }
-};
+        // Сохраняем режим в localStorage
+        if (isDark) {
+            localStorage.setItem("darkMode", "dark");
+        } else {
+            localStorage.setItem("darkMode", "light");
+        }
+    };
+});
 
-// Работа с блоком 'lang' - переключение языка
-const lang = document.querySelectorAll(".lang__item");
-var langActive = document.querySelector(".lang__item--active");
-// const demo = document.querySelector(".demo");
+// btnDarkMode.onclick = () => {
+//     btnDarkMode.classList.toggle("dark-mode-btn--active");
 
-var langActiveName = langActive.innerHTML;
+//     // Определяем, какой режим включен
+//     const isDark = document.body.classList.toggle("dark");
+
+//     // Сохраняем режим в localStorage
+//     if (isDark) {
+//         localStorage.setItem("darkMode", "dark");
+//     } else {
+//         localStorage.setItem("darkMode", "light");
+//     }
+// };
+
+//   =======================  Работа с блоком 'lang' - переключение языка  ==============================
+// var langActive = document.querySelector(".lang__item--active");
+// var langActiveName = langActive.innerHTML;
+var langActiveName;
 
 // Если есть на localStorage сохраненный язык - устанавливаем
 if (localStorage.getItem("lang") != undefined) {
@@ -90,28 +114,34 @@ if (localStorage.getItem("lang") != undefined) {
     localStorage.setItem("lang", langActiveName);
 }
 
+// console.log(`langActiveName: ${langActiveName}`);
+
+const lang = document.querySelectorAll(".lang__item");
+
+// Инициализация всех элементов
+init();
+
 // Инициализация выбора языка при первой загрузке и проверка клика
 lang.forEach((el) => {
-    setLang(el);
+    // Проверяем клик
+    el.addEventListener("click", () => {
+        langActiveName = el.innerHTML;
+
+        init();
+    });
+});
+
+// Рендеринг всех элементов после смены языка
+function init() {
+    setLang();
     changeLang();
 
     // Показываем проекты
     setProjects();
     setSelectedWorks();
+}
 
-    // Проверяем клик
-    el.addEventListener("click", () => {
-        langActive = document.querySelector(".lang__item--active");
-        langActiveName = el.innerHTML;
-
-        setLang(el);
-        changeLang();
-
-        // Показываем проекты
-        setProjects();
-    });
-});
-
+// Изменение надписей в соответствии с выбранным языком
 function changeLang() {
     // Если есть 'header' - заполняем его
     let header = document.querySelector(".header__wrapper");
@@ -124,7 +154,6 @@ function changeLang() {
         let slogan = globalTexts["slogan"][langActiveName.toLowerCase()];
         // let btnLoad = globalTexts["btn-load"][langActiveName.toLowerCase()];
 
-        
         header.innerHTML = `<h1 class="header__title">
                 ${aboutme}
             </h1>
@@ -285,12 +314,8 @@ function changeLang() {
         }
 
         if (gitRef != "") {
-            document
-                .querySelector(".btn")
-                .setAttribute("href", `${gitRef}`);
-            document
-                .querySelector(".btn")
-                .setAttribute("target", "_blank");
+            document.querySelector(".btn").setAttribute("href", `${gitRef}`);
+            document.querySelector(".btn").setAttribute("target", "_blank");
 
             gitTitle =
                 siteTitle == "E-Shop"
@@ -304,23 +329,53 @@ function changeLang() {
     }
 }
 
-changeLang();
+// changeLang();
 
 // Ф. установки языка при переключении и сохранение результата на localStorage
-function setLang(el) {
-    if (el.innerHTML == langActiveName) {
-        // Если, существующий язык и выбранный не совпадают, меняем активный
-        if (!el.classList.contains("lang__item--active")) {
-            // Удаляем класс ".active" у существующего элемента
-            langActive.classList.remove("lang__item--active");
+function setLang() {
+    // Если "RU", устанавливаем в 'body class="ru"'
+    if (langActiveName === "RU") {
+        document.body.classList.add("ru");
+    } else {
+        document.body.classList.remove("ru");
+    }
 
+    // Очищаем активный модификатор
+    lang.forEach((el) => {
+        el.classList.remove("lang__item--active");
+    });
+
+    // Устанавливаем активный модификатор для соответствующего языка
+    lang.forEach((el) => {
+        if (el.innerHTML == langActiveName) {
             // и добавляем к выбранному
             el.classList.add("lang__item--active");
 
             // Сохраняем режим в localStorage
             localStorage.setItem("lang", langActiveName);
         }
-    }
+    });
+
+    // const isRU = document.body.classList.toggle("ru")
+
+    // Если, существующий язык и выбранный не совпадают, меняем активный
+    // if (!el.classList.contains("lang__item--active")) {
+    //     langActive = document.querySelectorAll(".lang__item--active");
+    //     // Удаляем класс ".active" у существующего элемента
+    //     langActive.forEach((activeLang) => {
+    //         activeLang.classList.remove("lang__item--active");
+    //     });
+
+    //     // и добавляем к выбранному
+    //     el.classList.add("lang__item--active");
+
+    //     // Сохраняем режим в localStorage
+    //     localStorage.setItem("lang", langActiveName);
+    // }
+    // }
+    // else {
+    //     el.classList.remove("lang__item--active");
+    // }
 }
 
 // lang.onclick = (el) => {

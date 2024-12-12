@@ -31,33 +31,28 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* justify-content: space-between; меняем на flex-end, чтобы кнопку-переключатель
-  выровнять справа */
   align-items: center;
   column-gap: 40px; /* расстояние между колонками */
   row-gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .logo {
   display: flex;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  
   width: 158px;
-  
   /* color: var(--header-text);
   font-size: 24px;
   font-family: "Poppins", sans-serif; */
-
   font-family: var(--second-family);
   font-weight: 300;
   font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
   font-size: 14px;
   line-height: 150%;
   color: var(--text-default);
-  letter-spacing: 2;
+  /* letter-spacing: 0.2em; */
 }
 
 .logo .strong {
@@ -117,8 +112,9 @@
 
 .lang__item {
   margin: 0 auto;
-  color: var(--text-muted);
+  color: var(--text-default);
   opacity: 0.8;
+  cursor: pointer;
   transition: all 0.2s ease-in;
 }
 
@@ -126,7 +122,7 @@
   opacity: 1;
   color: var(--header-text);
   color: var(--text-default);
-  cursor: auto;
+  /* cursor: auto; */
 }
 
 .lang__item:hover {
@@ -142,12 +138,21 @@
 
 /* .nav-list__link--active::before, */
 .lang__item--active::before {
-  /* content: ""; */
+  content: "";
   position: absolute;
   left: 0;
   top: 100%;
   display: block;
   height: 2px;
   width: 100%;
-  background-color: var(--accent);
+  background-color: var(--text-color);
+}
+
+@media (max-width: 925px) {
+    .nav-list {display: none;}
+}
+
+@media (max-width: 500px) {
+  .logo {width: auto;}
+    /* .logo span {display: none;} */
 }

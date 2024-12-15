@@ -17,7 +17,7 @@
 
   /* Header */
 
-  .header {
+  /* .header {
     min-height: unset;
   }
 
@@ -27,7 +27,7 @@
 
   .header__title strong {
     font-size: 40px;
-  }
+  } */
 
 
   /* General */
@@ -118,28 +118,7 @@
 
 @media (max-width: 452px) {
 
-  /* Header */
-
-  /* .header {
-    min-height: unset;
-  } */
-
-  .header__title {
-    font-size: 20px;
-  }
-
-  .header__title strong {
-    font-size: 30px;
-  }
-
-  .header__text {
-    font-size: 15px;
-    line-height: 1;
-    margin-bottom: 30px;
-  }
-
-
-/* General */
+ /* General */
   
   .section {
     padding: 30px 0;

@@ -1,7 +1,7 @@
 .about {
     position: relative;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    /* padding-top: 120px; */
+    padding-block: 80px;
     /* background-image: image-set(
         url('./../../img/hero/hero.png') 1x,
         url('./../../img/hero/hero@2x.png') 2x);
@@ -11,84 +11,25 @@
     mix-blend-mode: lighten; */
 }
 
-.about__nameline-row {
-    /* max-width: 788px; */
-    /* position: absolute; */
-    /* left: 50%; */
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 579px;
-    /* transform: translateX(-50%); */
-    /* overflow: hidden; */
-}
-
-.about__nameline-row--mid {
-    position: absolute;
-    top: 2%;
-    display: none;
-    max-width: 929px;
-    width: 100%;
-    padding-inline: 20px;
-    /* left: 50%; */
-    /* margin: 0 auto;
-    display: flex; */
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    gap: 10px;
-    /* transform: translateX(-50%); */
-    /* overflow: hidden; */
-}
-
-
-.nameline {
-    height: 128px;
-
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 128px;
-    line-height: 100%;
-
-    color: var(--text-default);
-
-    white-space: nowrap;
-    text-overflow: clip;
-    overflow: hidden;
-}
-
-.nameline span {
-    font-family: "Gambetta", sans-serif;
-    font-style: italic;
-}
-
-.nameline--left {
-    direction: rtl;
-}
-
-.nameline--right {
-    /* overflow: hidden; */
-}
-
 .about__img {
     margin: 0 auto;
     aspect-ratio: 432/480;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
     /* display: flex; */
     justify-content: center;
-    /* height: 470px; */
-    /* display: inline-block;*/
+ 
     border-radius: 20px;
     object-position: center;
     object-fit: cover;
     overflow: hidden;
 }
 
-.about__img img {
+/* .about__img img {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 .about__header {
     padding-top: 60px;
@@ -108,10 +49,13 @@
 }
 
 .about__title span {
-    font-family: "Gambetta", sans-serif;
+    font-family: "Gambetta";
     font-style: italic;
     text-wrap: nowrap;
 }
+
+.ru .about__title {font-family: var(--font3); font-size: 64px;}
+.ru .about__title span {font-family: var(--font3); text-wrap: auto;}
 
 .about__content {
     display: grid;
@@ -122,10 +66,17 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--text-color);
+}
 
+.ru .about__content {
+    font-family: var(--font4);
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    font-style: italic;
 }
 
 .about__desc {
+    margin-top: 5px;
     /* font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
@@ -147,35 +98,17 @@
     gap: 10px;
 }
 
-.social-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
-    border: 1px solid var(--border-default);
-    border-radius: 50%;
-    padding: 8px 12px;
-    width: 46px;
-    height: 46px;
-
-    backdrop-filter: blur(30px);
-    background: var(--background-muted);
-}
-
-.about__social a {/* transition: filter 0.3s ease-in; */}
-
-.about__social a:hover {/* filter: brightness(1.1); */}
-
 
 @media (max-width: 929px) {
-    .about {padding-bottom: 60px;}
+    .about {padding-block: 60px;}
     
     .about__header {
-        padding-top: 300px;
         max-width: 568px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        padding-top: 40px;
     }
 
     .about__title {text-align: center;}
@@ -183,24 +116,41 @@
     .about__title span {
         text-wrap: nowrap;
     }
+}
 
-    .about__nameline-row {display: none;}
-
-    .about__nameline-row--mid {display: flex;}
-
-    .nameline {font-size: 60px;}
+@media (max-width: 680px) {
+    .ru .about__title {
+        font-size: 48px;
+        line-height: 100%;
+    }
 }
 
 @media (max-width: 500px) {
     .about {
         background-size: 160%;
         background-position-y: 10%;
-        padding-bottom: 40px;
+        padding-block: 30px;
     }
-
-    .about__header {padding-top: 44%;}
+    .about__header {padding-top: 26px;}
 }
 
-@media (max-width: 460px) {
+@media (max-width: 468px) {
+    .about__title {font-size: 36px;}
     .about__title span {text-wrap: wrap;}
+    .ru .about__title {
+        font-size: 40px;
+    }
+    .about__content {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .about__img {width: 100%;}
+}
+
+@media (max-width: 360px) {
+    /* .about__title {font-size: 30px;}
+    .about__content {font-size: 14px;}
+    .about__name {font-size: 18px;} */
+
 }

@@ -43,6 +43,7 @@
     .mobile-nav .nav__logo {
         margin-bottom: 30px;
         margin-top: auto;
+        color: var(--text-color) !important;
     }
 
     .mobile-nav-item {

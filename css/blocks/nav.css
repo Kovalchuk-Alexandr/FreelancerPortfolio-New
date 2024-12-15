@@ -39,20 +39,25 @@
 
 .logo {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
-  align-items: center;
+  align-items: end;
   gap: 10px;
   width: 158px;
   /* color: var(--header-text);
   font-size: 24px;
   font-family: "Poppins", sans-serif; */
   font-family: var(--second-family);
+  font-family: var(--font-cursive);
+  text-transform: capitalize;
   font-weight: 300;
   font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  
   color: var(--text-default);
-  /* letter-spacing: 0.2em; */
 }
 
 .logo .strong {

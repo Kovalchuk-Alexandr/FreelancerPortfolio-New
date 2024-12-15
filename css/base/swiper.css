@@ -30,7 +30,7 @@
 .swiper-slider {
     padding-block: 30px;
     width: 100%;
-    height: px;
+    /* height: px; */
 }
 
 .swiper {
@@ -59,4 +59,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .swiper-slider {padding-block: 15px;}
 }

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Hero';
+    src: url('Hero-Light.ttf') format("truetype");
+    font-weight: 200;
+  }
+
+@font-face {
+    font-family: 'Hero';
+    src: url('Hero-Regular.ttf') format("truetype");
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'Hero';
+    src: url('Hero-Bold.ttf') format("truetype");
+    font-weight: 700;
+  }

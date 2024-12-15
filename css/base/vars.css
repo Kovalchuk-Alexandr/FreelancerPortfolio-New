@@ -23,8 +23,15 @@
     /* Fonts */
     /* --font-family: "Satoshi", sans-serif;
     --second-family: "Chillax", sans-serif; */
-    --font-family: "Satoshi", sans-serif;
+    --font-family: "Satoshi";
     --second-family: "Chillax";
+    --third-family: "Gambetta";
+    --font-alter:'Futura PT Book';
+    --font2: 'Antarctic';
+    --font3: 'Larisa script';
+    --font4: 'Hero';
+    --font-cursive: "Great Vibes", cursive;
+
 
     /* Timeline */
     --padding: 48px;

@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 13px;
@@ -11,8 +10,8 @@
     text-transform: uppercase;
     text-wrap: nowrap;
     color: var(--text-color);
-
     transition: filter 0.2s ease-in;
+    justify-content: flex-end;
 }
 
 .link::before {

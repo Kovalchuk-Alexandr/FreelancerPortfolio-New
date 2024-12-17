@@ -9,7 +9,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 * {
-    /* border: 1px solid lightgray; */
+    border: 1px solid lightgray;
 }
 
 html {
@@ -25,12 +25,11 @@ body {
     /* footer {margin-top: auto;} - прижимает footer книзу
     при этом html, body {display: flex; flex-direction: column} */
     font-family: var(--font-family);
-    letter-spacing: -0.5px;
+    /* letter-spacing: -0.5px; */
 
     /* Color mode (Light - default)*/
-	background-color: var(--page-bg);
+    background-color: var(--page-bg);
     color: var(--text-color);
-
     /* padding-bottom: 500px; */
 }
 
@@ -105,18 +104,36 @@ body {
 }
 
 .h1 span {
-    font-family: "Gambetta", sans-serif;
+    font-family: "Gambetta";
     font-style: italic;
 }
 
-/* @media (max-width: 1130px) {
-    .title-1 {
-        font-size: 26px;
-    }
+.ru .h1 {
+  font-family: var(--font3);
+  font-size: 82px;
 }
 
-@media (max-width: 440px) {
-    .title-1 {
-        text-align: center;
-    }
-} */
+.ru .h1 span {
+  font-family: var(--font3);
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .section {padding-bottom: 60px;}
+}
+
+@media (max-width: 700px) {
+    .section {padding-top: 180px;}
+}
+
+@media (max-width: 660px) {
+    .h1 {
+      padding: 0 20px 20px 20px;
+      font-size: 48px;
+   }
+
+   .ru .h1 {
+    font-size: 64px;
+  }
+}
+

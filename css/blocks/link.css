@@ -14,6 +14,8 @@
     justify-content: flex-end;
 }
 
+.ru .link {font-family: var(--font5);}
+
 .link::before {
     content: "";
 

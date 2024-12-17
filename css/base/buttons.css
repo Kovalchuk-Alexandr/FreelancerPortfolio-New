@@ -72,6 +72,9 @@
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
+.ru .btn, .ru a.btn {
+  font-family: var(--font5);
+}
 
 .btn:hover, .btn:focus,
 a.btn:hover, a.btn:focus {

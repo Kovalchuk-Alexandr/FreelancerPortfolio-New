@@ -1,7 +1,7 @@
 /* Arik */
 :root {
     --text-default: #dac5a7;
-    --text-muted: rgba(218, 197, 167, 0.6);
+    --text-muted: #dac5a799;
     --text-inverse: #0e0e0e;
     --text-inverse-muted: rgba(255, 255, 255, 0.6);
     --background-default: #0e0e0e;
@@ -30,6 +30,7 @@
     --font2: 'Antarctic';
     --font3: 'Larisa script';
     --font4: 'Hero';
+    --font5: 'Garet';
     --font-cursive: "Great Vibes", cursive;
 
 

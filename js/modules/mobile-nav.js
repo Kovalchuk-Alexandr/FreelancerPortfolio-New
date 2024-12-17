@@ -11,7 +11,9 @@ const fade = document.querySelector(".mobile-nav-fade");
 //     el.onclick = toggleMobile;
 // }) 
 
-
+// navBtn.forEach(el => {
+//     el.onclick = toggleMobile;
+// });
 
 navBtn.onclick = toggleMobile;
 closeBtn.onclick = toggleMobile;
@@ -19,6 +21,7 @@ fade.onclick = toggleMobile;
 
 function toggleMobile() {
     // nav.classList.toggle("mobile-nav");  // Если используем одно меню nav/mobile-nav
+
     nav.classList.toggle("active");
     navBtn.classList.toggle("active");
     // menuIcon.classList.toggle("active");

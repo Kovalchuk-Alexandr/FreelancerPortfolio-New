@@ -13,6 +13,8 @@
 
 }
 
+.project-detailes .h1 {font-size: 72px;}
+
 .project-detailes__cover {
   max-width: 100%;
   margin-bottom: 40px;
@@ -136,3 +138,11 @@
 }
 
 .project-detailes__desc a {color: var(--accent)}
+
+@media (max-width: 850px) {
+    .nav-project-details .nav-row {flex-wrap: wrap;}
+    .nav-list {
+      margin: auto;
+      order: 3;
+    }
+}

@@ -90,7 +90,7 @@
 	pointer-events: none;
 }
 
-@media (max-width: 925px){
+@media (max-width: 970px){
     .mobile-nav.active {
         /* position: fixed;
         display: flex; */

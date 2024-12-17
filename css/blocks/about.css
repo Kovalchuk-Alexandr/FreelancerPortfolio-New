@@ -68,15 +68,22 @@
     color: var(--text-color);
 }
 
-.ru .about__content {
+.about__content-wrapper {
+    /* opacity: 0.8; */
+}
+
+.ru .about__content-wrapper {
     font-family: var(--font4);
-    font-weight: 200;
+    font-family: var(--font5);
+    font-weight: 300;
     letter-spacing: 0.05em;
     font-style: italic;
 }
 
+
 .about__desc {
     margin-top: 5px;
+    opacity: 0.8;
     /* font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
@@ -85,10 +92,14 @@
 }
 
 .about__name {
-    font-family: "Gambetta", sans-serif;
+    font-family: "Gambetta";
     font-style: italic;
     font-size: 22px;
     text-wrap: nowrap;
+}
+
+.ru .about__name {
+    font-family: var(--font5);
 }
 
 .about__social {

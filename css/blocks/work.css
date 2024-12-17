@@ -58,6 +58,8 @@
   background: rgba(23, 23, 23, 0.6);
 }
 
+.ru .work__title {font-family: var(--font5);}
+
 .work__icon {
   position: absolute;
   top: 5%;
@@ -73,7 +75,10 @@
 }
 
 @media (max-width: 380px) {
-    .work__title {padding: 6px 10px;}
+    .work__title {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
 }
 
 @media (max-width: 320px) {

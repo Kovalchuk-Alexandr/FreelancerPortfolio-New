@@ -55,6 +55,10 @@
     color: var(--text-default);
 }
 
+.btotop__text {
+    font-family: var(--font5);
+}
+
 .btotop__btn {
     display: flex;
     align-items: center;

@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 40px; /* расстояние между колонками */
+  column-gap: 20px; /* расстояние между колонками */
   row-gap: 20px;
   flex-wrap: nowrap;
 }
@@ -65,30 +65,31 @@
 }
 
 .nav-list {
+  flex-shrink: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  /* flex-wrap: wrap; */
   column-gap: 30px;
   row-gap: 10px;
-
   font-size: 16px;
   font-weight: 500;
   /* font-family: "Poppins", sans-serif; */
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 13px;
-
   line-height: 160%;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-default);
-
   padding: 10px 20px;
   border: 1px solid var(--border-default);
   border-radius: 12px;
   backdrop-filter: blur(5px);
   background: var(--background-muted);
 }
+
+.ru .nav-list {font-family: var(--font5);}
+
+.nav-list__item {flex-shrink: 0;}
 
 .nav-list__link {
   color: var(--header-text);
@@ -105,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  /* gap: 15px; */
 }
 
 .lang {
@@ -153,11 +154,48 @@
   background-color: var(--text-color);
 }
 
-@media (max-width: 925px) {
-    .nav-list {display: none;}
+@media (max-width: 970px) {
+    /* .nav-list {display: none;} */
+}
+
+@media (max-width: 700px) {
+    .nav-row {flex-wrap: wrap;}
+    .nav-list {
+      margin: auto;
+      order: 3;
+    }
+}
+
+@media (max-width: 676px) {
+  .nav-row {row-gap: 240px;}
 }
 
 @media (max-width: 500px) {
   .logo {width: auto;}
-    /* .logo span {display: none;} */
+  /* .logo span {display: none;} */
+}
+
+@media (max-width: 470px) {
+  .nav-row {row-gap: 180px;}
+  
+  .nav-list {
+    column-gap: 20px;
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-row {row-gap: 160px;}
+  .nav-list {
+    flex-shrink: 1;
+    column-gap: 15px;
+  }
+
+  .nav-list__item {flex-shrink: 1;}
+
+  .ru .nav-list {font-size: 10px;}
+
+  /* .nav-btn-set {column-gap: 15px;} */
+  .lang {margin-right: 15px;}
+  
 }

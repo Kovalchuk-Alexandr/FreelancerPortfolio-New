@@ -286,7 +286,7 @@ function changeLang() {
         }
 
         // Рисуем заголовок и картинку
-        document.querySelector(".project-detailes .title-1").innerHTML = title;
+        document.querySelector(".project-detailes .h1").innerHTML = title;
         document
             .querySelector(".project-detailes__cover")
             .setAttribute("src", `./img/projects/${img}.webp`);

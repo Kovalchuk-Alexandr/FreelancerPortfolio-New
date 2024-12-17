@@ -14,6 +14,16 @@
     color: var(--text-default);
 }
 
+.ru .footer-nav-title {
+    font-family: var(--font-family);
+    font-family: var(--font5);
+    /* font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.05em; */
+    
+}
+
 .footer-nav-list {
     display: flex;
     flex-direction: column;
@@ -35,6 +45,10 @@
     color: var(--text-muted);
 
     transition: all 0.3s ease-in;
+}
+
+.ru .footer-nav-link {
+    font-family: var(--font5);
 }
 
 .footer__nav--contacts .footer-nav-link {

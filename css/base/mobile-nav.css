@@ -40,6 +40,8 @@
         background: var(--background-muted)
     }
 
+    .ru .mobile-nav-list {font-family: var(--font5);}
+
     .mobile-nav .nav__logo {
         margin-bottom: 30px;
         margin-top: auto;
@@ -90,7 +92,7 @@
 	pointer-events: none;
 }
 
-@media (max-width: 970px){
+@media (max-width: 550px){
     .mobile-nav.active {
         /* position: fixed;
         display: flex; */

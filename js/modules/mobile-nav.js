@@ -8,12 +8,17 @@ const fade = document.querySelector(".mobile-nav-fade");
 
 // navBtn.forEach((el, index) => {
 //     console.log(`Element: ${el}; Index: ${index}`);
+//     console.log(el);
+    
 //     el.onclick = toggleMobile;
 // }) 
 
 // navBtn.forEach(el => {
 //     el.onclick = toggleMobile;
 // });
+
+// console.log(navBtn);
+
 
 navBtn.onclick = toggleMobile;
 closeBtn.onclick = toggleMobile;

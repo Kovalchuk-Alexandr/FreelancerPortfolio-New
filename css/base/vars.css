@@ -33,6 +33,12 @@
     --font5: 'Garet';
     --font-cursive: "Great Vibes", cursive;
 
+    --font6: 'Code Next-Trial', sans-serif;
+
+    font-family: 'Code Next-Trial', sans-serif;
+    font-family: 'Code Next', sans-serif;
+
+
 
     /* Timeline */
     --padding: 48px;

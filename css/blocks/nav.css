@@ -118,7 +118,7 @@
 
 .lang__item {
   margin: 0 auto;
-  color: var(--text-default);
+  color: var(--text-color);
   opacity: 0.8;
   cursor: pointer;
   transition: all 0.2s ease-in;
@@ -185,6 +185,7 @@
 }
 
 @media (max-width: 380px) {
+  .logo {font-size: 16px;}
   .nav-row {row-gap: 160px;}
   .nav-list {
     flex-shrink: 1;

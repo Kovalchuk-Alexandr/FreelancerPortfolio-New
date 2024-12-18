@@ -8,6 +8,7 @@
 	--spacing: 6px;
 
 	--color: #000;
+	--color: var(--text-color);
 	--radius: 4px;
 }
 

@@ -302,7 +302,8 @@ function changeLang() {
 
         // Выводим описание
         let textEnd = "</div>";
-        let text = `<div class="project-detailes__desc"><p>${desc}</p>`;
+        let text = `<p>${desc}</p>`;
+        // let text = `<div class="project-detailes__desc"><p>${desc}</p>`;
         // `<div class="project-description"><p class="desc"> ${desc}</p>`
 
         if (site != "") {
@@ -324,7 +325,7 @@ function changeLang() {
             // text += `<p class="github">Github: <a href=${gitRef} target="_blank">${gitTitle}</a> </p>`
         }
 
-        text += textEnd;
+        // text += textEnd;
         document.querySelector(".project-detailes__desc").innerHTML = text;
     }
 }

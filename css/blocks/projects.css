@@ -140,13 +140,4 @@
 
 @media (max-width: 440px) {
   .project__title {font-size: 18px;}
-
-  .h1 {
-    padding: 0 15px 15px 15px;
-    font-size: 40px;
-   }
-
-   .ru .h1 {
-    font-size: 52px;
-  }
 }

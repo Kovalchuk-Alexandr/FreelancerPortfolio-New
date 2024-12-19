@@ -145,11 +145,11 @@
 .project-detailes__desc a {color: var(--accent)}
 
 @media (max-width: 860px) {
-    .ru .nav-project-details .nav-row {flex-wrap: wrap;}
-    .ru .nav-list {
-      margin: auto;
-      order: 3;
-    }
+  .ru .nav-project-details .nav-row {flex-wrap: wrap;}
+  .ru .nav-project-details .nav-list {
+    margin: auto;
+    order: 3;
+  }
 
   .ru .section .project-detailes {padding-top: 70px;}
 
@@ -163,11 +163,11 @@
 }
 
 @media (max-width: 780px) {
-    .nav-project-details .nav-row {flex-wrap: wrap;}
-    .nav-list {
-      margin: auto;
-      order: 3;
-    }
+  .nav-project-details .nav-row {flex-wrap: wrap;}
+  .nav-project-details .nav-list {
+    margin: auto;
+    order: 3;
+  }
 
   .section .project-detailes {padding-top: 70px;}
 }

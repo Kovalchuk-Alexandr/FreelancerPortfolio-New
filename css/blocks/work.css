@@ -6,7 +6,7 @@
   width: 520px; */
   /* height: 600px; */
   background-color: var(--project-card-bg);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   border-radius: 10px;
   background-color: var(--background-muted-2);
   /* background-image: image-set(

@@ -3,7 +3,7 @@ const swiper = new Swiper(".swiper", {
     // Optional parameters
     // direction: "vertical",
     // spaceBetween: 30,
-    loop: true,
+    // loop: true,
     // slidesPerView: auto,
     // freeMode: true,
     // grabCursor: true,
@@ -19,7 +19,7 @@ const swiper = new Swiper(".swiper", {
     // },
     effect: "coverflow",
     grabCursor: true,
-    centeredSlides: false,
+    centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,
@@ -33,10 +33,10 @@ const swiper = new Swiper(".swiper", {
         //     slidesPerView: 'auto',
         //     spaceBetween: 26,
         // },
-        768: {
-            slidesPerView: "auto",
-            // spaceBetween: 33,
-        },
+        // 768: {
+        //     slidesPerView: "auto",
+        //     spaceBetween: 33,
+        // },
         // 1160: {
         //     slidesPerView: 'auto',
         //     spaceBetween: 33,

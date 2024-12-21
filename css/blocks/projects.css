@@ -21,9 +21,8 @@
 
 .nav-projects .logo {color: var(--text-color);}
 
-.nav-projects .lang__item {}
-
 .nav-projects .lang__item--active {color: var(--text-color);}
+.nav-projects .lang__item--active::before {background-color: var(--text-color);}
 
 .projects {
   display: flex;

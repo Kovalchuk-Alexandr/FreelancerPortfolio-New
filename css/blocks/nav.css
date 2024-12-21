@@ -43,7 +43,7 @@
   flex-wrap: wrap;
   align-items: end;
   gap: 10px;
-  width: 158px;
+  /* width: 158px; */
   /* color: var(--header-text);
   font-size: 24px;
   font-family: "Poppins", sans-serif; */
@@ -56,7 +56,6 @@
   line-height: 100%;
   letter-spacing: 0.02em;
   text-align: center;
-  
   color: var(--text-default);
 }
 
@@ -118,7 +117,7 @@
 
 .lang__item {
   margin: 0 auto;
-  color: var(--text-color);
+  color: var(--text-default);
   opacity: 0.8;
   cursor: pointer;
   transition: all 0.2s ease-in;
@@ -151,7 +150,7 @@
   display: block;
   height: 2px;
   width: 100%;
-  background-color: var(--text-color);
+  background-color: var(--text-default);
 }
 
 @media (max-width: 970px) {

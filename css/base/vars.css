@@ -2,6 +2,8 @@
 :root {
     --text-default: #dac5a7;
     --text-muted: #dac5a799;
+    --muted: #dac5a73d;
+    --muted-dark: #0e0e0e3d;
     --text-inverse: #0e0e0e;
     --text-inverse-muted: rgba(255, 255, 255, 0.6);
     --background-default: #0e0e0e;
@@ -87,6 +89,7 @@
   /* Light mode */
   --page-bg: var(--background-light);
   --text-color: var(--text-inverse);
+  --border-color: var(--muted-dark);
   --title-1: var(--accent);
 
   /* для карточек */
@@ -104,6 +107,7 @@
   
   --page-bg: var(--background-default);
   --text-color: var(--text-default);
+  --border-color: var(--muted);
 
   --title-1: var(--white);
 

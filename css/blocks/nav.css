@@ -1,22 +1,17 @@
 /* ------------- Navigation ------------- */
 .nav {
-  /* padding: 20px 10px;
-  color: var(--header-text);
-  background-color: var(--dark-bg);
-  border-bottom: 1px solid var(--dark-border);
-  letter-spacing: normal; */
   position: absolute;
-    top: 16px;
-    left: 50%;
-    width: 90%;
-    transform: translateX(-50%);
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  top: 16px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  z-index: 5;
+  /* display: flex;
+  align-items: center;
+  gap: 32px; */
 
-    padding: 10px;
-    color: var(--text-default);
+  padding: 10px;
+  color: var(--text-default);
 
     /* border: 1px solid var(--border-default);
     border-radius: 12px;

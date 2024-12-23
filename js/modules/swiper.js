@@ -12,30 +12,36 @@ const swiper = new Swiper(".swiper", {
     speed: 1000, //Скорость прокрутки
     /* Autoplay */
     // centeredSlides: true,
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     // reverseDirection: true, //обратное направление
-    // },
-    effect: "coverflow",
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        // reverseDirection: true, //обратное направление
+    },
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
+    effect: "coverflow",
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
     breakpoints: {
-        // 510: {
-        //     slidesPerView: 'auto',
-        //     spaceBetween: 26,
-        // },
+        510: {
+            loop: false
+        },
         // 768: {
-        //     slidesPerView: "auto",
-        //     spaceBetween: 33,
+            // effect: "coverflow",
+            // effect: "fade",
+            // lazy: true,
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            // },
+            //     slidesPerView: "auto",
+            //     spaceBetween: 33,
         // },
         // 1160: {
         //     slidesPerView: 'auto',

@@ -7,9 +7,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 30px 10px;
     flex-wrap: wrap;
-    padding: 0 32px 32px 32px;
+    padding: 0 32px 40px 32px;
     /* white-space: nowrap; */
 }
 
@@ -60,9 +60,9 @@
     .works {padding-block: 30px;}
 
     .works__header {
-        gap: 20px;
+        gap: 20px 10px;
 
-        padding: 0 20px 20px 20px;
+        padding: 0 20px 40px 20px;
     }
 
     .works__title {font-size: 48px;}
@@ -77,8 +77,6 @@
     .works {padding-block: 20px;}
 
     .works__header {
-        gap: 20px;
-
         padding: 0 10px 10px 10px;
     }
 

@@ -204,9 +204,9 @@ function changeLang() {
             let btnLoad = globalTexts["download"][langActiveName.toLowerCase()];
 
             let resumeURLru =
-                "https://docs.google.com/document/d/1y5QVsnCcs_rxeOIufdsyObcJFbBFzg4T/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
+                "https://docs.google.com/document/d/1FzAwcvophhSVuI0UmclNiKF93rQxTkB2/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
             let resumeURLen =
-                "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
+                "https://drive.google.com/file/d/1jgGv2ob1dJjdbdyreH7NugUhO-YHBnJU/view?usp=sharing";
 
             // let resumeURL = "https://itproger.com/img/courses/1637133308.jpg";
 
@@ -398,7 +398,6 @@ function setLang() {
 
 // Изменение языка у текстов
 
-
 // Вывод избранных работ
 function setSelectedWorks() {
     // Если на главной и есть такая необходимость, показываем проекты
@@ -423,26 +422,26 @@ function setSelectedWorks() {
             let text = `<li class="work swiper-slide" onclick="projectDetails(${
                 item.id
             })">
-                <a href="./project-page.html">
-                        <div class="work__img-wrapper">
-                            <picture>
-                                <source srcset="./img/projects/${
-                                    item.imgBig
-                                }.webp " type="image/webp">
-                                <source srcset="./img/projects/${
-                                    item.imgBig
-                                }.jpg " type="image/jpeg">
-                                <img src="./img/projects/${
-                                    item.imgBig
-                                }.jpg" alt="Project img" class="work__img">
-                            </picture>
-                        </div>
-                        <h3 class="work__title">${
-                            item["title"][langActiveName.toLowerCase()]
-                        }</h3>
-                        <div class="work__icon">${videoIcon}</div>
-                    </a>
-                </li`;
+                <a class="work-link" href="./project-page.html">
+                    <div class="work__img-wrapper">
+                        <picture>
+                            <source srcset="./img/projects/${
+                                item.imgBig
+                            }.webp " type="image/webp">
+                            <source srcset="./img/projects/${
+                                item.imgBig
+                            }.jpg " type="image/jpeg">
+                            <img src="./img/projects/${
+                                item.imgBig
+                            }.jpg" alt="Project img" class="work__img">
+                        </picture>
+                    </div>
+                    <div class="work__icon">${videoIcon}</div>
+                    <h3 class="work__title">${
+                        item["title"][langActiveName.toLowerCase()]
+                    }</h3>
+                </a>
+            </li`;
 
             selectedWorks.innerHTML += text;
         });

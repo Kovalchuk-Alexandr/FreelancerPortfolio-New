@@ -1,4 +1,16 @@
+.nav-project-details,
+.nav-projects {
+  position: static;
+  margin: 0 auto;
+  margin-top: 16px;
+
+  transform: unset;
+}
+
 /* ------------- Project detailes ---------------- */
+.section-project-detailes,
+.section-projects {padding-top: 32px;}
+
 .project-detailes {
   position: relative;
   margin: 0 auto;
@@ -129,10 +141,6 @@
   font-size: 20px;
 }
 
-.project-detailes__desc p {
-  /* margin-bottom: 30px; */
-}
-
 .project-detailes__desc p + p {
   margin-top: 2.5em;
   font-weight: 400;
@@ -144,36 +152,31 @@
 
 .project-detailes__desc a {color: var(--accent)}
 
-@media (max-width: 860px) {
+@media (max-width: 814px) {
   .ru .nav-project-details .nav-row {flex-wrap: wrap;}
   .ru .nav-project-details .nav-list {
     margin: auto;
     order: 3;
   }
 
-  .ru .section .project-detailes {padding-top: 70px;}
+  .section-project-detailes,
+  .section-projects{ padding-top: 20px;}
 
   .project-detailes .h1 {
     padding: 0 20px 20px 20px;
-    /* font-size: 64px; */
     line-height: 100%;
   }
 
   .ru .project-detailes .h1 {font-size: 64px;}
 }
 
-@media (max-width: 780px) {
+@media (max-width: 740px) {
   .nav-project-details .nav-row {flex-wrap: wrap;}
   .nav-project-details .nav-list {
     margin: auto;
     order: 3;
   }
 
-  .section .project-detailes {padding-top: 70px;}
-}
-
-@media (max-width: 700px) {
-  .section-project-detailes {padding-top: 120px;}
 }
 
 @media (max-width: 660px) {
@@ -184,16 +187,24 @@
     .nav-project-details .nav-list {
       display: none;
     }
-
-    .section-project-detailes {padding-top: 60px;}
 }
 
 @media (max-width: 400px) {
-  .section-project-detailes {padding-bottom: 40px;}
+  .section-project-detailes,
+  .section-projects {
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+
+  .project-detailes .h1 {padding-bottom: 15px;;}
   .ru .project-detailes .h1 {font-size: 40px;}
   .project-detailes__desc {
     margin-bottom: 50px;
     font-size: 18px;
   }
   .ru .project-detailes__desc {font-size: 16px;}
+
+  .project-detailes__desc p + p {
+    margin-top: 1.7em;
+  }
 }

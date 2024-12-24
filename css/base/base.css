@@ -118,6 +118,16 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 814px) {
+    .h1 {
+      font-size: 54px;
+   }
+
+   .ru .h1 {
+    font-size: 72px;
+  }
+}
+
 @media (max-width: 767px) {
     .section {padding-bottom: 60px;}
 }

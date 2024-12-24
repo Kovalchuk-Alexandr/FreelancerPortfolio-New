@@ -14,50 +14,52 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/aka/aka-logo-min.png">
 </head>
 <body>
-    <nav class="nav nav-projects nav-project-details">
-        <!-- <div class="container"> -->
-            <div class="nav-row">
-                <a href="./index.html" class="logo">
-                    <!-- <img src="./img/logo/aka-180.png" class="logo__img" width="48" alt="AKA Logo"> -->
-                    <span>alex<br>kovalchuk</span>
-                </a>
-
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="./index.html#" class="nav-list__link nav-list__link" data-lang="home">Home</a></li>
-                    <li class="nav-list__item"><a href="./index.html#about" class="nav-list__link nav-list__link" data-lang="about">About</a></li>
-                    <li class="nav-list__item"><a href="./index.html#works" class="nav-list__link" data-lang="selected">Sel.Works</a></li>
-                    <li class="nav-list__item"><a href="./projects.html" class="nav-list__link nav-list__link--active" aria-disabled="true" data-lang="projectsMenu">Projects</a></li>
-                    <!-- <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li> -->
-                </ul>
-
-                <div class="nav-btn-set">
-                    <div class="lang">
-                        <a href="#" class="lang__item">EN</a>
-                        <a href="#" class="lang__item lang__item--active">RU</a>
+    <div class="nav-wrapper">
+        <div class="container">
+        <nav class="nav nav-projects nav-project-details">
+                <div class="nav-row">
+                    <a href="./index.html" class="logo">
+                        <!-- <img src="./img/logo/aka-180.png" class="logo__img" width="48" alt="AKA Logo"> -->
+                        <span>alex<br>kovalchuk</span>
+                    </a>
+    
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="./index.html#" class="nav-list__link nav-list__link" data-lang="home">Home</a></li>
+                        <li class="nav-list__item"><a href="./index.html#about" class="nav-list__link nav-list__link" data-lang="about">About</a></li>
+                        <li class="nav-list__item"><a href="./index.html#works" class="nav-list__link" data-lang="selected">Sel.Works</a></li>
+                        <li class="nav-list__item"><a href="./projects.html" class="nav-list__link nav-list__link--active" aria-disabled="true" data-lang="projectsMenu">Projects</a></li>
+                        <!-- <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link" data-lang="contacts-mn">Contacts</a></li> -->
+                    </ul>
+    
+                    <div class="nav-btn-set">
+                        <div class="lang">
+                            <a href="#" class="lang__item">EN</a>
+                            <a href="#" class="lang__item lang__item--active">RU</a>
+                        </div>
+        
+                        <button class="dark-mode-btn ">
+                            <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                            <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                        </button>
+    
+                        <!-- Mobile button open -->
+                        <button class="mobile-nav-btn">
+                            <!-- Если используются разные кнопки для откр/закр -->
+                            <!-- <img class="nav-img" src="./img/ui/menu_right.svg" alt="Menu button" > -->
+                            <!-- <div class="mobile-nav-btn__icon"></div> -->
+    
+                            <svg id="menu-right" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 18.0048C22 18.5544 21.5544 19 21.0048 19H12.9952C12.4456 19 12 18.5544 12 18.0048C12 17.4552 12.4456 17.0096 12.9952 17.0096H21.0048C21.5544 17.0096 22 17.4552 22 18.0048Z" fill=""/>
+                                <path d="M22 12.0002C22 12.5499 21.5544 12.9954 21.0048 12.9954H2.99519C2.44556 12.9954 2 12.5499 2 12.0002C2 11.4506 2.44556 11.0051 2.99519 11.0051H21.0048C21.5544 11.0051 22 11.4506 22 12.0002Z" fill=""/>
+                                <path d="M21.0048 6.99039C21.5544 6.99039 22 6.54482 22 5.99519C22 5.44556 21.5544 5 21.0048 5H8.99519C8.44556 5 8 5.44556 8 5.99519C8 6.54482 8.44556 6.99039 8.99519 6.99039H21.0048Z" fill=""/>
+                            </svg>
+                        </button>
                     </div>
     
-                    <button class="dark-mode-btn ">
-                        <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                        <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                    </button>
-
-                    <!-- Mobile button open -->
-                    <button class="mobile-nav-btn">
-                        <!-- Если используются разные кнопки для откр/закр -->
-                        <!-- <img class="nav-img" src="./img/ui/menu_right.svg" alt="Menu button" > -->
-                        <!-- <div class="mobile-nav-btn__icon"></div> -->
-
-                        <svg id="menu-right" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 18.0048C22 18.5544 21.5544 19 21.0048 19H12.9952C12.4456 19 12 18.5544 12 18.0048C12 17.4552 12.4456 17.0096 12.9952 17.0096H21.0048C21.5544 17.0096 22 17.4552 22 18.0048Z" fill=""/>
-                            <path d="M22 12.0002C22 12.5499 21.5544 12.9954 21.0048 12.9954H2.99519C2.44556 12.9954 2 12.5499 2 12.0002C2 11.4506 2.44556 11.0051 2.99519 11.0051H21.0048C21.5544 11.0051 22 11.4506 22 12.0002Z" fill=""/>
-                            <path d="M21.0048 6.99039C21.5544 6.99039 22 6.54482 22 5.99519C22 5.44556 21.5544 5 21.0048 5H8.99519C8.44556 5 8 5.44556 8 5.99519C8 6.54482 8.44556 6.99039 8.99519 6.99039H21.0048Z" fill=""/>
-                        </svg>
-                    </button>
                 </div>
-
-            </div>
-        <!-- </div> -->
-    </nav>
+            </nav>
+        </div>
+    </div>
 
         <!-- ======= Мобильная навигация  ============================ -->
     <div class="mobile-nav ">
@@ -128,7 +130,7 @@
     </main>
 
     <footer class="footer"> 
-        <div class="container-footer">
+        <div class="container">
             <div class="footer__menu">
                  <a href="#!" class="logo footer__logo">
                     <img src="./img/logo/aka-180.png" alt="logo" class="logo-img">

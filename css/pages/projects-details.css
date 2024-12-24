@@ -152,7 +152,12 @@
 
 .project-detailes__desc a {color: var(--accent)}
 
-@media (max-width: 814px) {
+@media (max-width: 900px) {
+  .nav-project-details,
+  .nav-projects {width: 100%;}
+}
+
+@media (max-width: 754px) {
   .ru .nav-project-details .nav-row {flex-wrap: wrap;}
   .ru .nav-project-details .nav-list {
     margin: auto;
@@ -170,7 +175,7 @@
   .ru .project-detailes .h1 {font-size: 64px;}
 }
 
-@media (max-width: 740px) {
+@media (max-width: 687px) {
   .nav-project-details .nav-row {flex-wrap: wrap;}
   .nav-project-details .nav-list {
     margin: auto;

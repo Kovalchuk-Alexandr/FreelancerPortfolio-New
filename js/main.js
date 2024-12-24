@@ -154,12 +154,12 @@ function changeLang() {
         let slogan = globalTexts["slogan"][langActiveName.toLowerCase()];
         // let btnLoad = globalTexts["btn-load"][langActiveName.toLowerCase()];
 
-        header.innerHTML = `<h1 class="header__title">
-                ${aboutme}
-            </h1>
-            <div class="header__text">
-                <p >${slogan}</p>
-            </div>`;
+        // header.innerHTML = `<h1 class="header__title">
+        //         ${aboutme}
+        //     </h1>
+        //     <div class="header__text">
+        //         <p >${slogan}</p>
+        //     </div>`;
         // <a href="${resumeURL}" class="btn" target='_blank' download>${btnLoad}</a>`;
         // <a href="${resumeURL}" class="btn" download='resume.jpg' target='_blank'>${btnLoad} </a>`
     }

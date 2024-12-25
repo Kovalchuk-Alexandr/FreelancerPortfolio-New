@@ -9,7 +9,7 @@
     /* --swiper-pagination-color: var(--page-bg); */
     /* --swiper-navigation-top-offset: 24%; */
     /* --swiper-pagination-bottom: 10px; */
-    --swiper-pagination-bottom: 0px;
+    --swiper-pagination-bottom: -4px;
 }
 
 .swiper-pagination{ display: none;}
@@ -28,7 +28,7 @@
 /* Swiper Styles */
 .swiper-slider {
     position: relative;
-    padding-block: 60px 30px;
+    padding-block: 60px 40px;
     width: 100%;
     /* height: px; */
 }
@@ -36,7 +36,7 @@
 .swiper {
     width: 100%;
     height: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .swiper-3d {

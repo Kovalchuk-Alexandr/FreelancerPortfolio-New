@@ -11,10 +11,6 @@
   /* background: var(--background-default-ft); */
 }
 
-.nav-projects .nav-list {
-  /* background-color: #e5d2bf87; */
-}
-
 .nav-projects .nav-list__link {
   color: var(--text-color);
 }
@@ -47,7 +43,7 @@
       url('./../../img/projects/overlay-noise.png') 1x,
       url('./../../img/projects/overlay-noise@2x.png') 2x
   );
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   transition: all 0.3s ease-in;
 }
 
@@ -131,13 +127,29 @@
   /* background-size: 20px; */
 }
 
-@media (max-width: 644px) {
+@media (max-width: 700px) {
+    .nav-projects .nav-row {row-gap: 20px;
+
+    }
+}
+
+@media (max-width: 648px) {
   .ru nav.nav-projects .nav-row {flex-wrap: wrap;}
-  .ru .nav.nav-projects .nav-list {
+  .ru .nav-list-projects {
     margin: auto;
     order: 3;
   }
 }
+
+@media (max-width: 582px) {
+  nav.nav-projects .nav-row {flex-wrap: wrap;}
+  .nav-list-projects {
+    margin: auto;
+    order: 3;
+  }
+}
+
+
 
 /* @media (max-width: 687px) { */
   /* .nav-project .nav-row {flex-wrap: wrap;}
@@ -148,11 +160,6 @@
 
 /* } */
 
-@media (max-width: 700px) {
-    .nav-projects .nav-row {row-gap: 20px;
-
-    }
-}
 
 @media (max-width: 440px) {
   .project__title {font-size: 18px;}

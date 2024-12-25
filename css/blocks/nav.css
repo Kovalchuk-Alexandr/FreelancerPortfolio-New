@@ -163,7 +163,7 @@
     flex-wrap: wrap;
     row-gap: 200px;
   }
-  .nav-list {
+  .nav-list-main {
     margin: auto;
     order: 3;
   }

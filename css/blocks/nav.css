@@ -100,7 +100,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 15px; */
+  gap: 25px;
 }
 
 .lang {
@@ -194,7 +194,7 @@
 
   .ru .nav-list {font-size: 10px;}
 
-  /* .nav-btn-set {column-gap: 15px;} */
+  .nav-btn-set {column-gap: 15px;}
   .lang {margin-right: 15px;}
   
 }

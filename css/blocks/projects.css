@@ -43,7 +43,7 @@
       url('./../../img/projects/overlay-noise.png') 1x,
       url('./../../img/projects/overlay-noise@2x.png') 2x
   );
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   transition: all 0.3s ease-in;
 }
 

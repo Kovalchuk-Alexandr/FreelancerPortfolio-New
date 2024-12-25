@@ -42,15 +42,14 @@
   font-size: 21px;
   line-height: 110%;
   letter-spacing: 0.04em;
+
   color: var(--text-default);
   text-align: center;
   text-wrap: nowrap;
 
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
-  backdrop-filter: blur(30px);
-  background: var(--background-muted-2);
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(8px);
   background: rgba(23, 23, 23, 0.6);
 }
 

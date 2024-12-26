@@ -29,9 +29,9 @@ const swiper = new Swiper(".swiper", {
         slideShadows: false,
     },
     breakpoints: {
-        510: {
-            loop: false
-        },
+        // 510: {
+        //     loop: false
+        // },
         // 768: {
             // effect: "coverflow",
             // effect: "fade",

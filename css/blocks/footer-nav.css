@@ -17,12 +17,7 @@
 .ru .footer-nav-title {
     font-family: var(--font-family);
     font-family: var(--font5);
-    /* font-weight: 300;
-    font-size: 20px;
-    line-height: 140%;
-    letter-spacing: 0.05em; */
-    
-}
+ }
 
 .footer-nav-list {
     display: flex;
@@ -66,10 +61,4 @@
 
 .nav__btn {margin-left: 0;}
 
-@media (max-width: 550px) {
-    .footer__nav {gap: 20px;}
-
-    /* .nav-title {font-size: 22px;}
-
-    .nav-link {font-size: 16px;} */
-}
+@media (max-width: 550px) {.footer__nav {gap: 20px;}}

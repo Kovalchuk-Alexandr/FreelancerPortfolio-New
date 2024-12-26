@@ -1,5 +1,4 @@
 .work {
-  /* padding-bottom: 30px; */
   position: relative;
   aspect-ratio: 450/322;
   /* width: 420px;
@@ -57,11 +56,10 @@
 
 .work__icon {
   position: absolute;
-  /* top: 8%; */
+
   bottom: 3%;
   left: 1%;
   width: 25px;
-  /* background-size: 20px; */
 }
 
 @media (max-width: 499px) {

@@ -4,6 +4,7 @@ font-family: 'DM Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
+/* =============  Fonts ================= */
 @import './../fonts/chillax/css/chillax.css';
 @import './../fonts/gambetta/css/gambetta.css';
 @import './../fonts/satoshi/stylesheet.css';
@@ -16,11 +17,9 @@ font-family: 'Poppins', sans-serif;
 @import './../fonts/code-next-trial/style.css';
 
 
-
-/* =============  Fonts ================= */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
 
 /* =============  Base ================= */
 @import './base/reset.css';

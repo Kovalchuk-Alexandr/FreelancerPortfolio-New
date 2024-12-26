@@ -164,15 +164,6 @@ function changeLang() {
         // <a href="${resumeURL}" class="btn" download='resume.jpg' target='_blank'>${btnLoad} </a>`
     }
 
-    // header.innerHTML = `<h1 class="header__title">
-    //         <strong >${greating}<br> <em>${name}</em></strong><br>${aboutme}
-    //     </h1>
-    //     <div class="header__text">
-    //         <p >${slogan}</p>
-    //     </div>
-    //     <a href="${resumeURL}" class="btn" target='_blank' download>${btnLoad}</a>`;
-    // }
-
     // Заполняем все статические надписи
     for (const key in globalTexts) {
         let elem = document.querySelectorAll(`[data-lang=${key}]`);
@@ -226,7 +217,6 @@ function changeLang() {
             }
 
             btnCV.innerHTML = `<a href="${resumeURL}" class="btn " target='_blank' download>${btnLoad}</a>`;
-            // <a href="${resumeURL}" class="btn" download='resume.jpg' target='_blank'>${btnLoad} </a>`
         }
     }
 
@@ -409,10 +399,6 @@ function setSelectedWorks() {
 
         // Заполняем все проекты из базы (projects.js)
         selectedWorksData.forEach((item) => {
-            // console.log(item.id + " " + item.title + " " + item.img);
-            // console.log("-----");
-            // projectsAll = document.querySelector('main .projects');
-
             // Проверяем, есть ли ссылка на демо-видео youtube
             if (item.demo) {
                 videoIcon = `<img src="./img/video/movie_camera_icon.svg" alt="Demo available">`;
@@ -458,10 +444,6 @@ function setProjects() {
 
         // Заполняем все проекты из базы (projects.js)
         projects.forEach((item) => {
-            // console.log(item.id + " " + item.title + " " + item.img);
-            // console.log("-----");
-            // projectsAll = document.querySelector('main .projects');
-
             // Проверяем, есть ли ссылка на демо-видео youtube
             if (item.demo) {
                 videoIcon = `<img src="./img/video/movie_camera_icon.svg" alt="Demo available">`;
@@ -491,18 +473,6 @@ function setProjects() {
                         <div class="project__icon">${videoIcon}</div>
                     </a>
                 </li`;
-            // let text =
-            //     `<li class="project" onclick="projectDetails(${item.id})">
-            //         <a href="./project-page.html">
-            //             <img src="./img/projects/${
-            //                 item.img
-            //             }" alt="Project img" class="project__img">
-            //             <h3 class="project__title">${
-            //                 item["title"][langActiveName.toLowerCase()]
-            //             }</h3>
-            //             <div class="project__icon">${videoIcon}</div>
-            //         </a>
-            //     </li`;
 
             projectsAll.innerHTML += text;
         });
@@ -516,113 +486,3 @@ function setProjects() {
 function projectDetails(id) {
     localStorage.setItem("projectId", id);
 }
-
-// ============ Ф. обработки нажатия кнопки загрузки ============== //
-// Для скачивания с GoogleDrive нужен  Google API
-const saveFile = async () => {
-    // let resumeURLen = "https://docs.google.com/document/d/1sh2D9XNrhXUHriTJ5jau8URiod3V5TtO/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
-    let resumeURLen = "https://itproger.com/img/courses/1637133308.jpg";
-    let resumeURLru =
-        "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
-    let resumeURL = "";
-
-    switch (langActiveName.toLowerCase()) {
-        case "en":
-            resumeURL = resumeURLen;
-            break;
-        case "ru":
-            resumeURL = resumeURLru;
-            break;
-
-        default:
-            resumeURL = resumeURLru;
-            break;
-    }
-
-    // let resumeURL = `${resumeURL + langActiveName.toLowerCase()}`;
-    let suggestedName = resumeURL;
-
-    // Обнаружение поддержки браузером API.
-    // API должен поддерживаться
-    // и приложение не запущено в iframe.
-    //   const supportsFileSystemAccess =
-    //     'showSaveFilePicker' in window &&
-    //     (() => {
-    //       try {
-    //         return window.self === window.top;
-    //       } catch {
-    //         return false;
-    //       }
-    //     })();
-    // Если File System Access API поддерживается…
-    //   if (!supportsFileSystemAccess) {
-    //     try {
-    //       // Показать диалог сохранения файла.
-    //       const handle = await showSaveFilePicker({
-    //         suggestedName,
-    //       });
-    //       // Записать blob в файл.
-    //       const writable = await handle.createWritable();
-    //       await writable.write(blob);
-    //       await writable.close();
-    //       return;
-    //     } catch (err) {
-    //       // Обработчик исключения, когда
-    //       // пользователь отменил скачивание файла
-    //       if (err.name !== 'AbortError') {
-    //         console.error(err.name, err.message);
-    //         return;
-    //       }
-    //     }
-    //     }
-
-    let myObj = await fetch(resumeURL, {})
-        .then((res) => res.blob())
-        .then(console.log);
-    //     .then(data => {
-
-    // Когда API доступа к файловой системе не поддерживается…
-    // Сделать blob URL.
-    // const blobURL = URL.createObjectURL(data);
-    // Сделать невидимый HTML-элемент `<a download>`
-    // и включить его в документ
-    // const a = document.createElement('a');
-    // a.href = blobURL;
-    // a.download = suggestedName;
-    // a.style.display = 'none';
-    // document.body.append(a);
-    // Программно кликнуть по ссылке.
-    // a.click();
-    // Уничтожить большой blob URL
-    // и удалить ссылку из документа
-    // после клика по ней
-    // setTimeout(() => {
-    //   URL.revokeObjectURL(blobURL);
-    //   a.remove();
-    // }, 1000);
-    // })
-    // console.log(myObj);
-    // let myText = await myObject.text();
-    // console.log(myText);
-
-    var link = document.createElement("a");
-    //pdflink - путь к файлу
-
-    link.setAttribute("href", resumeURL);
-    //pdfname - имя файла для загрузки (как он будет называться у посетителя)
-
-    // link.setAttribute('download',pdfname);
-    link.setAttribute("download", "resume.jpg");
-
-    link.setAttribute("target", "_blank");
-
-    link.style.display = "none";
-
-    document.body.appendChild(link);
-    link.click();
-
-    document.body.removeChild(link);
-};
-
-// Обработчик нажатия кнопки загрузки файла
-// const btn = document.querySelector('.btn').addEventListener('click', saveFile);

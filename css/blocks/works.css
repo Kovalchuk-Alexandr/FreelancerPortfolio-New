@@ -1,7 +1,4 @@
-.works {
-    padding-block: 60px 30px;
-    /* padding-top: clamp(2.5rem, -4.423rem + 19.23vw, 10rem); */
-}
+.works {padding-block: 60px 30px;}
 
 .works__header {
     display: flex;
@@ -26,8 +23,6 @@
 }
 
 .works__title span {
-    /* font-family: "Gambetta", sans-serif; */
-    font-family: var(--font2);
     font-family: var(--font3);
     font-family: var(--third-family);
     font-style: italic;
@@ -38,13 +33,6 @@
 
 .works__link {margin-left: auto;}
 
-.works__grid {
-    /* display: flex; */
-    /* flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 28px;
-    row-gap: 30px; */
-}
 
 @media (max-width: 768px) {
     .works {padding-block: 40px 20px;}

@@ -8,12 +8,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  /* align-items: center; */
 
   color: var(--header-text);
   text-align: center;
 
-  /* background-color: var(--dark-bg); */
   background-color: #7f7f7f;
   /* background-image: url('../../img/header-bg.png'); */
   background-image: url('../../img/header/aka-bg.jpg');
@@ -67,14 +65,11 @@
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.06em;
   font-size: 44px;
-  /* font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem); */
-  /* line-height: 150%; */
+  
   text-align: center;
-  color: var(--text-muted);
   color: var(--text-default);
   text-shadow: var(--text-default) 0 0 1px;
   backdrop-filter: blur(3px);
-  /* background: var(--background-muted-2); */
 }
 
 /* для всех тэгов <p> и соседних (кроме первого) оступ сверху 

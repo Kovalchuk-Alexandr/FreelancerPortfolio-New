@@ -157,7 +157,7 @@
   .nav-projects {width: 100%;}
 }
 
-@media (max-width: 754px) {
+@media (max-width: 762px) {
   .ru .nav-project-details .nav-row {flex-wrap: wrap;}
   .ru .nav-project-details .nav-list {
     margin: auto;
@@ -175,7 +175,7 @@
   .ru .project-detailes .h1 {font-size: 64px;}
 }
 
-@media (max-width: 687px) {
+@media (max-width: 695px) {
   .nav-project-details .nav-row {flex-wrap: wrap;}
   .nav-project-details .nav-list {
     margin: auto;

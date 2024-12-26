@@ -95,7 +95,7 @@
 }
 
 .nav-btn-set {
-  /* padding-inline: 5px; */
+  padding-inline: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,8 +105,7 @@
 .lang {
   display: flex;
   column-gap: 10px;
-
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 .lang__item {

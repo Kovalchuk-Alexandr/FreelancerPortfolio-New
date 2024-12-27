@@ -9,6 +9,7 @@
   align-items: center;
   gap: 32px; */
 
+  margin: 0 auto;
   position: static;
   width: 90%;
   padding: 10px;
@@ -147,7 +148,19 @@
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 710px) {
+  /* .nav-row {row-gap: 240px;} */
+  .ru .nav-row {
+    flex-wrap: wrap;
+    row-gap: 200px;
+  }
+  .ru .nav-list-main {
+    margin: auto;
+    order: 3;
+  }
+}
+
+@media (max-width: 690px) {
   /* .nav-row {row-gap: 240px;} */
   .nav-row {
     flex-wrap: wrap;
